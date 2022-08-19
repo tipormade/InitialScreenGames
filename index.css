@@ -1,0 +1,38 @@
+.fundo{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bola{
+    background-color: green;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    animation: movingBox 6s ease-in-out infinite;
+}
+
+@keyframes movingBox {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0.4;
+    }
+  
+    25% {
+      opacity: 0.9;
+    }
+  
+    50% {
+      transform: translate(150px, 200px);
+      opacity: 0.2;
+    }
+  
+    100% {
+      transform: translate(40px, 30px);
+      opacity: 0.8;
+    }
+  }
