@@ -1,58 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+body{
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+}
+
 .fundo{
-    display: flex;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
 }
 
-.one{
+.row{
+  align-items: center;
+  justify-content: center;
+}
+
+.row-title{
+  z-index: 1001 !important;
+  margin: 15px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+h1{
+  font-size: 70px;
+  color: white;
+}
+
+.col{
+  z-index: 1001 !important;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.cta {
+  width: 570px;
+  height: 150px;
+  display: flex;
+  padding: 45px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background: #2A836B;
+  transition: 1s;
+  box-shadow: 6px 6px 0 white;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none; 
+}
+
+.cta:hover {
+  color: white;
+  transition: 0.5s;
+  box-shadow: 20px 20px 0 white;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg) 
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
   position: relative;
-  left: 30px;
-  top:50px;
-  
-}
-.two{
-position: relative;
-  left: 100px;
-  top:200px;
-}
-.three{
-position: relative;
-  left: 300px;
-  top:100px;
-}
-.four{
-position: relative;
-  left: 30px;
+  top: 12%;
 }
 
-.bola{
-    background-color: green;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    animation: movingBox 6s ease-in-out infinite;
+svg{
+  vertical-align: 0%;
 }
 
-@keyframes movingBox {
-    0% {
-      transform: translate(0, 0);
-      opacity: 0.4;
-    }
-  
-    25% {
-      opacity: 0.9;
-    }
-  
-    50% {
-      transform: translate(150px, 200px);
-      opacity: 0.2;
-    }
-  
-    100% {
-      transform: translate(40px, 30px);
-      opacity: 0.8;
-    }
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+@keyframes color_anim {
+  0% {
+      fill: white;
   }
+  50% {
+      fill: #2A836B;
+  }
+  100% {
+      fill: white;
+  }
+}
+
+li {
+  list-style: none;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  animation: up 3s infinite alternate;
+}
+
+li:hover{
+  box-shadow: 0 0 1em white;
+}
+
+@keyframes up {
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-900px);
+  }
+}
