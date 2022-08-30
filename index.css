@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@font-face {
+  font-family: 'AftikaBlack';
+  src: url(FontsFree-Net-AftikaBlack.ttf);
+}
+@font-face {
+  font-family: 'Golca';
+  src: url(pepper-type-golca/Pepper\ Type\ -\ Golca-ExtraLight.otf);
+}
 
 body{
   margin: 0;
@@ -16,29 +24,74 @@ body{
 }
 
 .row{
+  padding-top: 150px;
   align-items: center;
   justify-content: center;
 }
 
 .row-title{
   z-index: 1001 !important;
-  margin: 15px;
   padding-top: 150px;
-  padding-bottom: 50px;
+}
+
+img{
+  z-index: 1001 !important;
 }
 
 h1{
-  font-size: 70px;
+  text-align: center;
+  font-family: 'AftikaBlack', sans-serif;
+  z-index: 1001 !important;
+  font-weight: 800;
+  font-size: 190px;
   color: white;
+  padding: 0%;
+  margin: 0%;
+  height: 155px;
+  animation: showup 10s infinite;
+}
+@keyframes showup {
+  0% {opacity:0;}
+  25% {opacity:1;}
+  75% {opacity:1;}
+  100% {opacity:0;}
+}
+
+h2{
+  z-index: 1001 !important;
+  text-align: end;
+  padding: 0%;
+  margin: 0%;
+  height: 155px;
+  transform: rotate(-15deg);
+}
+
+.bi-controller{
+  color: white;
+  font-size: 120px;
+  padding-right: 40px;
+  vertical-align: -2.3em;
+  animation: showup 10s infinite;
+}
+
+h3{
+  margin: 0%;
+  padding: 0%;
+  text-align: end;
+  font-family: 'Golca', sans-serif;
+  z-index: 1001 !important;
+  font-weight: bolder;
+  font-size: 130px;
+  color: #c7f1bf;
+  text-shadow: 0 0 1em #2A836B;
 }
 
 .col{
+  flex: 0;
   z-index: 1001 !important;
   margin: 15px;
   padding: 15px;
-  text-align: center;
-  justify-items: center;
-  align-items: center;
+  width: max-content;
 }
 
 .cta {
@@ -77,10 +130,11 @@ h1{
 }
 
 span {
-  transform: skewX(15deg) 
+  transform: skewX(15deg);
 }
 
 span:nth-child(2) {
+  color: white;
   width: 20px;
   margin-left: 30px;
   position: relative;
@@ -127,6 +181,13 @@ svg{
   }
 }
 
+.bi-joystick{
+  padding-left: 15px;
+}
+.bi-suit-diamond-fill{
+  padding-left: 10px;
+}
+
 li {
   list-style: none;
   border-radius: 50%;
@@ -150,6 +211,17 @@ li:hover{
   }
   100%{
     opacity: 0;
-    transform: translateY(-900px);
+    transform: translateY(-1915px);
   }
+}
+
+@media screen and (max-width: 1080px) and (max-height: 1920px){
+  .col{
+    flex: 0;
+    z-index: 1001 !important;
+    margin: 15px;
+    padding: 15px;
+    width: max-content;
+  }
+
 }
