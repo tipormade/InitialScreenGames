@@ -19,6 +19,8 @@ body{
   width: 100vw;
   height: 100vh;
   margin: 0px;
+  margin-top: 100vw;
+  box-shadow:0 -8em 2500px #4ceb94;
 }
 
 .row{
@@ -44,7 +46,6 @@ h1{
   font-size: 190px;
   color: white;
   padding: 0%;
-  margin: 0%;
 }
 
 h2{
@@ -61,10 +62,11 @@ h2{
   font-size: 120px;
   padding-right: 42px;
   vertical-align: -2.4em;
-  animation: flickflick 2s infinite;
+  animation: flickflick 3s infinite;
 }
 @keyframes flickflick {
-  0%{ text-shadow:0 0 0em white;;}
+  0%{ text-shadow:0 0 0em white;}
+  25%{ text-shadow:0 0 1em white;}
   50%{ text-shadow:0 0 0.08em white;}
   100%{ text-shadow:0 0 0em white;}
 }
@@ -374,7 +376,7 @@ li {
 }
 
 li:hover{
-  box-shadow: 0 0 1em white;
+  box-shadow: 0 0em 0.5em white;
 }
 
 @keyframes up {
@@ -399,5 +401,4 @@ li:hover{
     padding: 15px;
     width: max-content;
   }
-
 }
