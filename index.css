@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
-@font-face {
-  font-family: 'AftikaBlack';
-  src: url(FontsFree-Net-AftikaBlack.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 @font-face {
   font-family: 'Golca';
   src: url(pepper-type-golca/Pepper\ Type\ -\ Golca-ExtraLight.otf);
@@ -40,20 +38,13 @@ img{
 
 h1{
   text-align: center;
-  font-family: 'AftikaBlack', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1001 !important;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 190px;
   color: white;
   padding: 0%;
   margin: 0%;
-  animation: showup 10s infinite;
-}
-@keyframes showup {
-  0% {opacity:0;}
-  25% {opacity:1;}
-  75% {opacity:1;}
-  100% {opacity:0;}
 }
 
 h2{
@@ -68,32 +59,42 @@ h2{
 .bi-controller{
   color: white;
   font-size: 120px;
-  padding-right: 40px;
-  vertical-align: -2.3em;
-  animation: showup 10s infinite;
+  padding-right: 42px;
+  vertical-align: -2.4em;
+  animation: flickflick 2s infinite;
+}
+@keyframes flickflick {
+  0%{ text-shadow:0 0 0em white;;}
+  50%{ text-shadow:0 0 0.08em white;}
+  100%{ text-shadow:0 0 0em white;}
 }
 
 h3{
+  padding-top: 5px;
   margin: 0%;
-  padding: 0%;
   text-align: end;
   font-family: 'Golca', sans-serif;
   z-index: 1001 !important;
   font-weight: bolder;
   font-size: 3em;
-  letter-spacing: 8px;
+  letter-spacing: 7px;
   line-height: 0%;
+}
+.el1{
   color: #c7f1bf;
   text-shadow: 0 0 1em #2A836B;
   animation: glitch1 2.5s infinite;
 }
-h3:nth-child(2) {
-  color: #6313f8;
+.el2 {
+  padding-top: 0%;
+  color: #87e2b0;
+  text-shadow: 0 0 1em #9cf7c5;
   animation: glitch2 2.5s infinite;
 }
 
-h3:nth-child(3) {
-  color: #5eff00;
+.el3 {
+  color: #9bf593;
+  text-shadow: #4ceb94;
   animation: glitch3 2.5s infinite;
 }
 @keyframes glitch1 {
@@ -103,7 +104,7 @@ h3:nth-child(3) {
   }
   7% {
     transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
+    opacity: 0.5;
   }
   10% {
     transform: none;
@@ -115,7 +116,7 @@ h3:nth-child(3) {
   }
   30% {
     transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
+    opacity: 0.5;
   }
   35% {
     transform: none;
@@ -127,7 +128,7 @@ h3:nth-child(3) {
   }
   55% {
     transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
+    opacity: 0.5;
   }
   50% {
     transform: none;
@@ -138,8 +139,8 @@ h3:nth-child(3) {
     opacity: 1;
   }
   75% {
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
+    transform: skew(-8deg, 0.4deg);
+    opacity: 0.5;
   }
   80% {
     transform: none;
@@ -157,7 +158,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   7% {
-    transform: translate(-3deg, -1deg);
+    transform: translate(-5deg, 2deg);
     opacity: 0.5;
   }
   10% {
@@ -169,7 +170,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   30% {
-    transform: translate(-2deg, -0.3deg);
+    transform: translate(-2deg, 10deg);
     opacity: 0.5;
   }
   35% {
@@ -181,7 +182,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   55% {
-    transform: translate(-3deg, 0.6deg);
+    transform: translate(-10deg, 7deg);
     opacity: 0.5;
   }
   50% {
@@ -193,7 +194,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   75% {
-    transform: translate(0.7deg, -1.7deg);
+    transform: translate(0.7deg, -5deg);
     opacity: 0.5;
   }
   80% {
@@ -212,7 +213,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   7% {
-    transform: translate(-0.9deg, -2deg);
+    transform: translate(-10deg, -2.7deg);
     opacity: 0.5;
   }
   10% {
@@ -224,7 +225,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   30% {
-    transform: translate(-1.4deg, 1.3deg);
+    transform: translate(-3deg, 2deg);
     opacity: 0.5;
   }
   35% {
@@ -236,7 +237,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   55% {
-    transform: translate(-1.3deg, 1.7deg);
+    transform: translate(-1.3deg, 2deg);
     opacity: 0.5;
   }
   50% {
@@ -248,7 +249,7 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
   75% {
-    transform: translate(1deg, 1.3deg);
+    transform: translate(1deg, 4deg);
     opacity: 0.5;
   }
   80% {
