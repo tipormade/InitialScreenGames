@@ -26,3 +26,24 @@ for (let i = 0; i < 50; i++) {
 
     ul.appendChild(li);
 }
+
+var counterTicTac = 0;
+var counterMemory = 0;
+
+window.onload = ()=>{
+    document.querySelector("#counterTicTac").addEventListener("click", counter);
+    document.querySelector("#counterMemory").addEventListener("click", counter2);
+
+    counterTicTac = localStorage.getItem("counterTictac")
+    counterMemory = localStorage.getItem("counterMemory")
+}
+
+function counter(){
+    counterTicTac++;
+    localStorage.setItem("counterTictac", counterTicTac.toString());
+}
+
+function counter2(){
+    counterMemory++;
+    localStorage.setItem("counterMemory", counterMemory.toString());
+};
