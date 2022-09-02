@@ -228,7 +228,11 @@ const checkEndGame = () => {
           'Parabéns!',
           'Você ganhou o brinde',
           'success'
-        )},500 );
+          
+        )},500, setTimeout(function() {
+          window.location.replace("/index.html");
+      }, 3000));
+
     
     },500);
     
@@ -350,10 +354,12 @@ const startTimer = () => {
           icon: 'error',
           title: 'Você Perdeu',
           text: 'Tente Novamente',
-          
         })
         disableAllCard();
         //desabilitar cartas
+        setTimeout(function() {
+          window.location.replace("/index.html");
+      }, 2000); 
     }
 
     timer.innerText = currentTime;
