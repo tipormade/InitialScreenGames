@@ -358,7 +358,7 @@ const startTimer = () => {
         disableAllCard();
         //desabilitar cartas
         setTimeout(function() {
-          window.location.replace("/index.html");
+          window.location.replace("/initialScreenGames/index.html");
       }, 2000); 
     }
 

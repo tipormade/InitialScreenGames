@@ -304,13 +304,14 @@ h3{
   transform: rotateY(180deg);
 }
 
-.disabled-card {
-  
-}
-
 .fundo{
   width: 100vw;
   height: 100vw;
   margin-top: 70px;
   box-shadow:0 -8em 2500px #4ceb94;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+  width: 0%;
 }
