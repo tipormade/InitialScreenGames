@@ -55,7 +55,7 @@ h2{
   100%{ text-shadow:0 0 0em white;}
 }
 .subtitle{
-  padding-top: 10px;
+  padding-top: 25px;
 }
 h3{
   padding-top: 5px;
@@ -308,9 +308,9 @@ h3{
   
 }
 
-
-.logoPormade{
-  padding-bottom: 10px ;
-  width: 200px;
+.fundo{
+  width: 100vw;
+  height: 100vw;
+  margin-top: 70px;
+  box-shadow:0 -8em 2500px #4ceb94;
 }
-
