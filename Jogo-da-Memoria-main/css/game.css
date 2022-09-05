@@ -2,6 +2,8 @@ body{
   background-color: black;
   margin: 0%;
   padding: 0%;
+  overflow: hidden;
+  position: fixed; top: 0; left: 0;
 }
 
 .row{
@@ -306,8 +308,8 @@ h3{
 
 .fundo{
   width: 100vw;
-  height: 100vw;
-  margin-top: 70px;
+  height: 100vh;
+  margin-top: 95px;
   box-shadow:0 -8em 2500px #4ceb94;
 }
 

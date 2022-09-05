@@ -230,7 +230,7 @@ const checkEndGame = () => {
           'success'
           
         )},500, setTimeout(function() {
-          window.location.replace("/index.html");
+          window.location.replace("../../index.html");
       }, 3000));
 
     
@@ -358,7 +358,7 @@ const startTimer = () => {
         disableAllCard();
         //desabilitar cartas
         setTimeout(function() {
-          window.location.replace("/InitialScreenGames/index.html");
+          window.location.replace("../../index.html");
       }, 2000); 
     }
 
