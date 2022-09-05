@@ -2,7 +2,7 @@ const ul = document.querySelector("ul");
 
 const random = (min, max) => Math.random() * (max - min) + min;
 
-const randomColors = ["#024053", "#136B69", "#2A836B", "#499C70", "#6EB47D", "#9DCC9B", "#D5E4CF"];
+const randomColors = ["#1D782C", "#70DE62", "#37df5b", "#4af06e", "#7DF76D", "#9fd69d", "#D5E4CF"];
 
 for (let i = 0; i < 50; i++) {
     const li = document.createElement("li");

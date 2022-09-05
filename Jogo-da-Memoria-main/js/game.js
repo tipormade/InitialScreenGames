@@ -226,12 +226,11 @@ const checkEndGame = () => {
       setTimeout(() =>{
         Swal.fire(
           'Parabéns!',
-          'Você ganhou o brinde',
-          'success'
-          
-        )},500, setTimeout(function() {
-          window.location.replace("../../index.html");
-      }, 3000));
+          'Você ganhou!',
+          'success',
+        ).then( (result) => {
+          window.location.replace("../../");
+        })},500);
 
     
     },500);
@@ -354,12 +353,11 @@ const startTimer = () => {
           icon: 'error',
           title: 'Você Perdeu',
           text: 'Tente Novamente',
-        })
+        }).then( (result) => {
+          window.location.replace("../../");
+        });
         disableAllCard();
         //desabilitar cartas
-        setTimeout(function() {
-          window.location.replace("../../index.html");
-      }, 2000); 
     }
 
     timer.innerText = currentTime;
