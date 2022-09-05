@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        class="logoPormade"
+        src="../images/games (1).png"
+        alt="logo-pormade-games"
+      />
+
+      <div id="title">
+        <!-- <h2 id="winnerDisplay" class="">Jogo da Velha</h2> -->
+        <p id="winnerPlayer" class="hidden">0</p>
+      </div>
+
+      <div class="countainer">
+        <div class="game">
+          <button data-i="0"></button>
+          <button data-i="1"></button>
+          <button data-i="2"></button>
+          <button data-i="3"></button>
+          <button data-i="4"></button>
+          <button data-i="5"></button>
+          <button data-i="6"></button>
+          <button data-i="7"></button>
+          <button data-i="8"></button>
+          <div>
+            <div id="winner" class="hidden">
+              <h2 id="winnerTitle">Vitória do Jogador</h2>
+              <p id="winnerText">O</p>
+            </div>
+            <img id="background" src="../images/quadro.png" width="600px" />
+            <img
+              id="winLine"
+              class="hidden"
+              src="../images/Line.png"
+              width="600px"
+            />
+          </div>
+        </div>
+        <div id="divButton">
+          <button class="invisible" id="play" onclick="playGame()">Play</button>
+        </div>
+        <h2 class="currentPlayer"></h2>
+        <div class="score">
+          <h2>
+            <p id="turnX" class="hidden">°</p>
+            X
+            <p id="xScore">0</p>
+          </h2>
+          <h2>
+            <p id="turnO" class="hidden">°</p>
+            O
+            <p id="oScore">0</p>
+          </h2>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

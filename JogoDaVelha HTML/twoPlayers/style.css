@@ -1,0 +1,232 @@
+:root {
+  --darkreader-neutral-background: #131516;
+  --darkreader-neutral-text: #d8d4cf;
+  --darkreader-selection-background: #004daa;
+  --darkreader-selection-text: #e8e6e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131516;
+}
+
+#title h1 {
+  color: #509d45;
+  text-align: center;
+  font-size: 50pt;
+  margin-bottom: 100px;
+}
+
+#title h2 {
+  color: black;
+  text-align: center;
+  font-size: 60pt;
+}
+
+#title p {
+  color: #509d45;
+  text-align: center;
+  font-size: 90pt;
+  margin-bottom: 50px;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+}
+
+.countainer {
+  margin: auto;
+}
+.game {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.logoPormade {
+  width: 500px;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  filter: invert();
+}
+
+.game button {
+  color: #509d45;
+  border: none;
+  font-size: 100pt;
+  font-weight: bold;
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.game button:hover {
+  background-color: #4f9d4575;
+}
+
+#winner {
+  background-color: #4f9d45b7;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: xxx-large;
+  width: 600px;
+  padding: 150px 0 150px 0;
+  border-radius: 20px;
+  margin-top: -630px;
+  z-index: 10;
+}
+
+#winner p {
+  font-size: 100pt;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin: 100px 300px 100px;
+  text-align: center;
+}
+
+.score h2 {
+  color: #509d45;
+  font-size: 60pt;
+  font-weight: bold;
+}
+
+.score h2 p {
+  color: white;
+  font-weight: bold;
+  font-size: 60pt;
+}
+
+#background {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -600px;
+  z-index: -2;
+  filter: invert();
+}
+
+#divButton {
+  display: flex;
+}
+
+.condition0 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -505px;
+  z-index: -2;
+}
+
+.condition1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -300px;
+  z-index: -2;
+}
+
+.condition2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -105px;
+  z-index: -2;
+}
+
+.condition3 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -305px;
+  margin-left: -200px;
+  transform: rotate(90deg);
+  z-index: -2;
+}
+
+.condition4 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -305px;
+  margin-left: 0px;
+  transform: rotate(90deg);
+  z-index: -2;
+}
+
+.condition5 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -305px;
+  margin-left: 200px;
+  transform: rotate(90deg);
+  z-index: -2;
+}
+
+.condition6 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -305px;
+  transform: rotate(45deg);
+  z-index: -2;
+}
+
+.condition7 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -305px;
+  transform: rotate(-45deg);
+  z-index: -2;
+}
+
+#play {
+  color: white;
+  background-color: #509d45;
+  font-size: 55pt;
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.invisible {
+  display: none;
+}
