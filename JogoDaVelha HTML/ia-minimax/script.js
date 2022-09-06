@@ -93,7 +93,7 @@ function playGame() {
         'Você ganhou!',
         'success',
       ).then( (result) => {
-        window.location.replace("../../");
+        window.location.replace("../../index.html");
       });
   }
 }
