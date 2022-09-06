@@ -7,9 +7,9 @@
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ia-minimax/style.css" />
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <main>
       <div class="container text-center">
         <div class="row row-title">
@@ -34,8 +34,8 @@
             <button data-i="2,1" id="button21"></button>
             <button data-i="2,2" id="button22"></button>
             <div>
-              <img id="background" src="../images/quadro.png" width="600px" />
-              <img id="winLine" class="hidden" src="../images/Line.png" width="600px"/>
+              <img id="background" src="images/quadro.png" width="600px" />
+              <img id="winLine" class="hidden" src="images/Line.png" width="600px"/>
             </div>
           </div>
           <div id="divButton">
@@ -62,8 +62,8 @@
       </div>
       <div class="fundo"></div>
     </main>
-    <script src="script.js"></script>
-    <script src="minimax.js"></script>
-    <script src="/Jogo-da-Memoria-main/sweetalert2/sweetalert.js"></script>
+    <script src="ia-minimax/script.js"></script>
+    <script src="ia-minimax/minimax.js"></script>
+    <script src="../Jogo-da-Memoria-main/sweetalert2/sweetalert.js"></script>
   </body>
 </html>
