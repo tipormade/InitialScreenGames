@@ -12,7 +12,9 @@ const imagens = [
   'porta-externa-pormade-pvc-wood-wpc1p-preta',
   'Boutique Acetinado Nero',
   'Boutique Halftone',
-  'Dupla Laqueada',
+  'preto_madeira_verniz_2',
+  'freijo_-07',
+  'curupixa_-11',
   'Freijó Frizzatta',
   'Pivotante Tabaco Frizzatta',
 ]
@@ -313,20 +315,19 @@ const loadGame = () => {
 
 const revealAllCards = () => {
   let allCards = document.querySelectorAll('.card')
-  if (timer.innerText == 60){
+  if (timer.innerText){
     allCards.forEach(element => {
       element.classList.add('reveal-card')
       element.removeEventListener('click', revealCard)
     });
   }
-  if(timer.innerText==58){
+  setTimeout(() =>{
     console.log('a')
     allCards.forEach(element => {
       element.classList.remove('reveal-card')
       element.addEventListener('click', revealCard)
-    });
-  }
-  
+    });  
+  }, 1000);
 }
 
 const disableAllCard = () => {
@@ -339,13 +340,10 @@ const disableAllCard = () => {
 }
 
 const startTimer = () => {
-
   this.loop = setInterval(() => {
     let currentTime = +timer.innerText;
     currentTime--;
 
-
-    revealAllCards()
     if (currentTime==0){
       clearInterval(this.loop)
         //exibir uma mensagem de perdeu playboy
@@ -359,12 +357,14 @@ const startTimer = () => {
         disableAllCard();
         //desabilitar cartas
     }
-
     timer.innerText = currentTime;
   }, 1000);
 }
 
 window.onload = () => {
-  startTimer();
   loadGame();
+  revealAllCards();
+  setTimeout(()=> {
+    startTimer();
+  },1000)
 }
