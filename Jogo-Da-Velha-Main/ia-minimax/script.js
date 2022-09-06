@@ -1,9 +1,3 @@
-// Tic Tac Toe AI with Minimax Algorithm
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/challenges/154-tic-tac-toe-minmax
-// https://youtu.be/I64-UTORVfU
-// https://editor.p5js.org/codingtrain/sketches/0zyUhZdJD
-
 var buttons = document.querySelectorAll('.game button');
 var winLine = document.querySelector('#winLine');
 var xScoreText = document.querySelector('#xScore');
@@ -42,34 +36,31 @@ function checkWinnerFinal() {
     oScore++;
     oScoreText.innerHTML = oScore;
   } else if (winner == 'tie') {
-    console.log('tie');
   }
 
   if (winner) {
     showResult();
+    clearGrid();
   }
 }
 
+function clearGrid() {
+  setTimeout(playGame, 1000);
+}
+
 function showResult() {
-  playButton.classList.remove('invisible');
   if (winner != 'tie') showLine();
 }
 
 function showLine() {
   winLine.classList.remove('hidden');
-
   winnerLine = checkLine();
-  console.log(winnerLine.position);
-
   winLine.classList.add(`condition${winnerLine.position}`);
 }
 
 function playGame() {
-  playButton.classList.toggle('invisible');
   winLine.removeAttribute('class');
   winLine.setAttribute('class', 'hidden');
-  //winner.classList.add('hidden');
-
   currentPlayer = human;
   board = [
     ['', '', ''],
@@ -86,15 +77,10 @@ function playGame() {
 
     oScoreText.innerHTML = oScore;
     xScoreText.innerHTML = xScore;
-    
-    console.log('a')
-      Swal.fire(
-        'Parabéns!',
-        'Você ganhou!',
-        'success',
-      ).then( (result) => {
-        window.location.replace("../../index.html");
-      });
+
+    Swal.fire('Parabéns!', 'Você ganhou!', 'success').then((result) => {
+      window.location.replace('../../index.html');
+    });
   }
 }
 
@@ -112,8 +98,8 @@ let board = [
   ['', '', ''],
 ];
 
-let w; // = width / 3;
-let h; // = height / 3;
+let w;
+let h;
 
 let ai = 'O';
 let human = 'X';

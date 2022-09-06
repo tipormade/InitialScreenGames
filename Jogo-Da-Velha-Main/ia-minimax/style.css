@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 :root {
   --darkreader-neutral-background: #131516;
   --darkreader-neutral-text: #d8d4cf;
@@ -230,7 +232,7 @@ h2{
   color: white;
   font-size: 75px;
   vertical-align: -2.9em;
-  padding-left: 320px;
+  padding-left: 355px;
   animation: flickflick 3s infinite;
 }
 @keyframes flickflick {
@@ -441,7 +443,7 @@ h3{
   width: 100vw;
   height: 100vh;
   margin-top: 50vw;
-  box-shadow:0 -25em 2500px #7DF76D;
+  box-shadow:0 -10em 2500px #7DF76D;
 }
 
 body::-webkit-scrollbar{

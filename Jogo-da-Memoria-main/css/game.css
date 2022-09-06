@@ -311,7 +311,7 @@ h3{
   width: 100vw;
   height: 100vh;
   margin-top: 95px;
-  box-shadow:0 -8em 2500px #7DF76D;
+  box-shadow:0 -10em 2500px #7DF76D;
 }
 
 body::-webkit-scrollbar{
