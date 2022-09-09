@@ -32,9 +32,32 @@ function checkWinnerFinal() {
   } else if (winner == human) {
     xScore++;
     xScoreText.innerHTML = xScore;
+    if(xScore >= 3){
+      Swal.fire('Parabéns!', 'Você ganhou!', 'success').then((result) => {
+        window.location.replace('../../index.html');
+      });
+    }
   } else if (winner == ai) {
     oScore++;
     oScoreText.innerHTML = oScore;
+    if(oScore >= 3){
+      Swal.fire({
+        title: 'Você perdeu',
+        text: "Deseja Jogar novamente?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#509d45',
+        cancelButtonColor: '#024053',
+        confirmButtonText: 'Sim',
+        cancelButtonText: 'Não'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.replace("index.html")
+        }else{
+          window.location.replace("../index.html")
+        }
+      })
+    }
   } else if (winner == 'tie') {
   }
 
@@ -78,9 +101,6 @@ function playGame() {
     oScoreText.innerHTML = oScore;
     xScoreText.innerHTML = xScore;
 
-    Swal.fire('Parabéns!', 'Você ganhou!', 'success').then((result) => {
-      window.location.replace('../../index.html');
-    });
   }
 }
 
