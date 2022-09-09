@@ -226,12 +226,13 @@ const checkEndGame = () => {
         }, DURATION / 2);
       })();
       setTimeout(() =>{
-        Swal.fire(
-          'Parabéns!',
-          'Você ganhou!',
-          'success',
-        ).then( (result) => {
-          window.location.replace("../../");
+        Swal.fire({
+          title: 'Parabéns!',
+          message: 'Você ganhou!',
+          icon: 'success',
+          confirmButtonColor: '#509d45'
+        }).then( (result) => {
+          window.location.replace("../index.html");
         })},500);
 
     
