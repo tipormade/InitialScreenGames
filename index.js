@@ -29,13 +29,16 @@ for (let i = 0; i < 50; i++) {
 
 var counterTicTac = 0;
 var counterMemory = 0;
+var counterTower = 0;
 
 window.onload = ()=>{
     document.querySelector("#counterTicTac").addEventListener("click", counter);
     document.querySelector("#counterMemory").addEventListener("click", counter2);
+    document.querySelector("#counterTower").addEventListener("click", counter3);
 
-    counterTicTac = localStorage.getItem("counterTictac")
-    counterMemory = localStorage.getItem("counterMemory")
+    counterTicTac = localStorage.getItem("counterTictac");
+    counterMemory = localStorage.getItem("counterMemory");
+    counterTower = localStorage.getItem("counterTower");
 }
 
 function counter(){
@@ -47,3 +50,9 @@ function counter2(){
     counterMemory++;
     localStorage.setItem("counterMemory", counterMemory.toString());
 };
+
+function counter3(){
+    counterTower++;
+    localStorage.setItem("counterTower", counterTower.toString());
+};
+
