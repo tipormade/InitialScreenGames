@@ -56,7 +56,7 @@ function checkWinnerFinal() {
         }else{
           window.location.replace("../index.html")
         }
-      })
+      });
     }
   } else if (winner == 'tie') {
   }

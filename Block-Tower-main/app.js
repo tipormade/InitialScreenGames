@@ -208,7 +208,7 @@ var Game = /** @class */ (function () {
         document.addEventListener('click', function (e) {
             _this.onAction();
         });
-       /*  document.addEventListener('touchstart', function (e) {
+        /*  document.addEventListener('touchstart', function (e) {
             e.preventDefault();
             // this.onAction();
             // ☝️ this triggers after click on android so you
@@ -231,7 +231,22 @@ var Game = /** @class */ (function () {
                 this.placeBlock();
                 break;
             case this.STATES.ENDED:
-                this.restartGame();
+                Swal.fire({
+                    title: 'Bom Jogo!',
+                    text: "Deseja Jogar novamente?",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#509d45',
+                    cancelButtonColor: '#024053',
+                    confirmButtonText: 'Sim',
+                    cancelButtonText: 'Não'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                    window.location.replace("index.html")
+                    }else{
+                    window.location.replace("../index.html")
+                    }
+                });
                 break;
         }
     };
@@ -241,28 +256,6 @@ var Game = /** @class */ (function () {
             this.updateState(this.STATES.PLAYING);
             this.addBlock();
         }
-    };
-    Game.prototype.restartGame = function () {
-        var _this = this;
-        this.updateState(this.STATES.RESETTING);
-        var oldBlocks = this.placedBlocks.children;
-        var removeSpeed = 0.2;
-        var delayAmount = 0.02;
-        var _loop_1 = function (i) {
-            TweenLite.to(oldBlocks[i].scale, removeSpeed, { x: 0, y: 0, z: 0, delay: (oldBlocks.length - i) * delayAmount, ease: Power1.easeIn, onComplete: function () { return _this.placedBlocks.remove(oldBlocks[i]); } });
-            TweenLite.to(oldBlocks[i].rotation, removeSpeed, { y: 0.5, delay: (oldBlocks.length - i) * delayAmount, ease: Power1.easeIn });
-        };
-        for (var i = 0; i < oldBlocks.length; i++) {
-            _loop_1(i);
-        }
-        var cameraMoveSpeed = removeSpeed * 2 + (oldBlocks.length * delayAmount);
-        this.stage.setCamera(2, cameraMoveSpeed);
-        var countdown = { value: this.blocks.length - 1 };
-        TweenLite.to(countdown, cameraMoveSpeed, { value: 0, onUpdate: function () { _this.scoreContainer.innerHTML = String(Math.round(countdown.value)); } });
-        this.blocks = this.blocks.slice(0, 1);
-        setTimeout(function () {
-            _this.startGame();
-        }, cameraMoveSpeed * 1000);
     };
     Game.prototype.placeBlock = function () {
         var _this = this;
