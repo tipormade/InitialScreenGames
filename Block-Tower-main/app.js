@@ -241,7 +241,7 @@ var Game = /* @class */ (function () {
                         confirmButtonText:'Ok',
                         confirmButtonColor:'#509d45',
                     }).then((result) => {
-                        window.location.replace("../")
+                        window.location.replace("../index.html")
                     });
                 }else{
                     Swal.fire({
@@ -257,7 +257,7 @@ var Game = /* @class */ (function () {
                         if (result.isConfirmed) {
                         window.location.replace("index.html")
                         }else{
-                        window.location.replace("../")
+                        window.location.replace("../index.html")
                         }
                     });
                 }

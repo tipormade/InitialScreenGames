@@ -361,7 +361,7 @@ const startTimer = () => {
           if (result.isConfirmed) {
           window.location.replace("index.html")
           }else{
-          window.location.replace("../")
+          window.location.replace("../index.html")
           }
       });
         disableAllCard();
