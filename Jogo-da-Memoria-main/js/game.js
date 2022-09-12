@@ -228,11 +228,11 @@ const checkEndGame = () => {
       setTimeout(() =>{
         Swal.fire({
           title: 'Parabéns!',
-          message: 'Você ganhou!',
+          text: 'Você ganhou!',
           icon: 'success',
           confirmButtonColor: '#509d45'
         }).then( (result) => {
-          window.location.replace("../index.html");
+          window.location.replace("../");
         })},500);
 
     
@@ -353,7 +353,7 @@ const startTimer = () => {
           title: 'Você Perdeu',
           text: 'Tente Novamente',
         }).then( (result) => {
-          window.location.replace("../index.html");
+          window.location.replace("../");
         });
         disableAllCard();
         //desabilitar cartas

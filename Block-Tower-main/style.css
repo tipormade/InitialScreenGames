@@ -160,7 +160,7 @@ h1{
 
 h2{
 	z-index: 1001 !important;
-	text-align: center;
+	text-align: end;
 	padding: 0%;
 	margin: 0%;
 	color: white;
@@ -169,10 +169,11 @@ h2{
 }
 
 .bi-controller{
+	position: relative;
 	color: white;
 	font-size: 75px;
 	vertical-align: -2.9em;
-	padding-left: 355px;
+	padding-right: 3.1em;
 	animation: flickflick 3s infinite;
 }
 @keyframes flickflick {

@@ -231,22 +231,36 @@ var Game = /** @class */ (function () {
                 this.placeBlock();
                 break;
             case this.STATES.ENDED:
-                Swal.fire({
-                    title: 'Bom Jogo!',
-                    text: "Deseja Jogar novamente?",
-                    icon: 'question',
-                    showCancelButton: true,
-                    confirmButtonColor: '#509d45',
-                    cancelButtonColor: '#024053',
-                    confirmButtonText: 'Sim',
-                    cancelButtonText: 'Não'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                    window.location.replace("index.html")
-                    }else{
-                    window.location.replace("../index.html")
-                    }
-                });
+                this.endGame();
+                var atualPontuation = (this.blocks.length - 1);
+                if(atualPontuation >= 26){
+                    Swal.fire({
+                        title: 'Bom Jogo!',
+                        text: 'Parabéns! Você ganhou o prêmio',
+                        icon: 'success',
+                        confirmButtonText:'Ok',
+                        confirmButtonColor:'#509d45',
+                    }).then((result) => {
+                        window.location.replace("../")
+                    });
+                }else{
+                    Swal.fire({
+                        title: 'Ops, você não atingiu a pontuação mínima.',
+                        text: "Deseja Jogar novamente?",
+                        icon: 'question',
+                        showCancelButton: true,
+                        confirmButtonColor: '#509d45',
+                        cancelButtonColor: '#024053',
+                        confirmButtonText: 'Sim',
+                        cancelButtonText: 'Não'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                        window.location.replace("index.html")
+                        }else{
+                        window.location.replace("../")
+                        }
+                    });
+                }
                 break;
         }
     };
@@ -320,7 +334,6 @@ var Game = /** @class */ (function () {
 
     Game.prototype.endGame = function () {
         this.updateState(this.STATES.ENDED);
-
     };
     Game.prototype.tick = function () {
         var _this = this;

@@ -34,7 +34,7 @@ function checkWinnerFinal() {
     xScoreText.innerHTML = xScore;
     if (xScore >= 3) {
       Swal.fire('Parabéns!', 'Você ganhou!', 'success').then(result => {
-        window.location.replace('../index.html');
+        window.location.replace('../');
       });
     }
   } else if (winner == ai) {
@@ -54,7 +54,7 @@ function checkWinnerFinal() {
         if (result.isConfirmed) {
           window.location.replace('index.html');
         } else {
-          window.location.replace('../index.html');
+          window.location.replace('../');
         }
       });
     }
