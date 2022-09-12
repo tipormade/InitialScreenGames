@@ -174,7 +174,7 @@ var Block = /** @class */ (function () {
     };
     return Block;
 }());
-var Game = /** @class */ (function () {
+var Game = /* @class */ (function () {
     function Game() {
         var _this = this;
         this.STATES = {

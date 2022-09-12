@@ -230,7 +230,8 @@ const checkEndGame = () => {
           title: 'Parabéns!',
           text: 'Você ganhou!',
           icon: 'success',
-          confirmButtonColor: '#509d45'
+          confirmButtonColor: '#509d45',
+          confirmButtonText: 'Ok',
         }).then( (result) => {
           window.location.replace("../");
         })},500);
@@ -323,7 +324,6 @@ const revealAllCards = () => {
     });
   }
   setTimeout(() =>{
-    console.log('a')
     allCards.forEach(element => {
       element.classList.remove('reveal-card')
       element.addEventListener('click', revealCard)
@@ -349,12 +349,21 @@ const startTimer = () => {
       clearInterval(this.loop)
         //exibir uma mensagem de perdeu playboy
         Swal.fire({
+          title: 'Ops, acabou o tempo...',
+          text: "Deseja Jogar novamente?",
           icon: 'error',
-          title: 'Você Perdeu',
-          text: 'Tente Novamente',
-        }).then( (result) => {
-          window.location.replace("../");
-        });
+          showCancelButton: true,
+          confirmButtonColor: '#509d45',
+          cancelButtonColor: '#024053',
+          confirmButtonText: 'Sim',
+          cancelButtonText: 'Não'
+      }).then((result) => {
+          if (result.isConfirmed) {
+          window.location.replace("index.html")
+          }else{
+          window.location.replace("../")
+          }
+      });
         disableAllCard();
         //desabilitar cartas
     }

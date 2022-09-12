@@ -33,7 +33,13 @@ function checkWinnerFinal() {
     xScore++;
     xScoreText.innerHTML = xScore;
     if (xScore >= 3) {
-      Swal.fire('Parabéns!', 'Você ganhou!', 'success').then(result => {
+      Swal.fire({
+        title: 'Parabéns!',
+        text: 'Você ganhou!', 
+        icon: 'success',
+        confirmButtonColor: '#509d45',
+        confirmButtonText: 'Ok',
+      }).then((result) => {
         window.location.replace('../');
       });
     }
@@ -44,7 +50,7 @@ function checkWinnerFinal() {
       Swal.fire({
         title: 'Você perdeu',
         text: 'Deseja Jogar novamente?',
-        icon: 'warning',
+        icon: 'error',
         showCancelButton: true,
         confirmButtonColor: '#509d45',
         cancelButtonColor: '#024053',
