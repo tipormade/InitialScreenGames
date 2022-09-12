@@ -247,7 +247,7 @@ var Game = /* @class */ (function () {
                     Swal.fire({
                         title: 'Ops, você não atingiu a pontuação mínima.',
                         text: "Deseja Jogar novamente?",
-                        icon: 'question',
+                        icon: 'error',
                         showCancelButton: true,
                         confirmButtonColor: '#509d45',
                         cancelButtonColor: '#024053',
