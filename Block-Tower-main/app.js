@@ -255,9 +255,9 @@ var Game = /* @class */ (function () {
                         cancelButtonText: 'Não'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                        window.location.replace("index.html");
+                            window.location.replace("index.html");
                         }else{
-                        window.location.replace("../index.html");
+                            window.location.replace("../index.html");
                         }
                     });
                 }
