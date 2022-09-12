@@ -5,7 +5,7 @@ var Mycolors = [
 
 var changeColor = true;
 
-var Stage = /** @class */ (function () {
+var Stage =  /** @class */ (function () {
     function Stage() {
         // container
         var _this = this;
@@ -241,7 +241,7 @@ var Game = /* @class */ (function () {
                         confirmButtonText:'Ok',
                         confirmButtonColor:'#509d45',
                     }).then((result) => {
-                        window.location.replace("../index.html")
+                        window.location.replace("../index.html");
                     });
                 }else{
                     Swal.fire({
@@ -255,9 +255,9 @@ var Game = /* @class */ (function () {
                         cancelButtonText: 'Não'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                        window.location.replace("index.html")
+                        window.location.replace("index.html");
                         }else{
-                        window.location.replace("../index.html")
+                        window.location.replace("../index.html");
                         }
                     });
                 }
