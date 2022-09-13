@@ -333,7 +333,7 @@ margin-right: 0px;
 
 .cta:hover  span:nth-child(2) {
 transition: 0.5s;
-margin-right: 45px;
+margin-left: 2em;
 }
 
 span {
