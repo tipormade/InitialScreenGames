@@ -5,6 +5,8 @@ var Mycolors = [
 
 var changeColor = true;
 
+const minBlockGain = 10;
+
 var Stage =  /** @class */ (function () {
     function Stage() {
         // container
@@ -232,36 +234,41 @@ var Game = /* @class */ (function () {
                 break;
             case this.STATES.ENDED:
                 this.endGame();
-                var atualPontuation = (this.blocks.length - 1);
-                if(atualPontuation >= 26){
-                    Swal.fire({
-                        title: 'Bom Jogo!',
-                        text: 'Parabéns! Você ganhou o prêmio',
-                        icon: 'success',
-                        confirmButtonText:'Ok',
-                        confirmButtonColor:'#509d45',
-                    }).then((result) => {
-                        window.location.replace("../index.html");
-                    });
-                }else{
-                    Swal.fire({
-                        title: 'Ops, você não atingiu a pontuação mínima.',
-                        text: "Deseja Jogar novamente?",
-                        icon: 'error',
-                        showCancelButton: true,
-                        confirmButtonColor: '#509d45',
-                        cancelButtonColor: '#024053',
-                        confirmButtonText: 'Sim',
-                        cancelButtonText: 'Não'
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            window.location.replace("index.html");
-                        }else{
-                            window.location.replace("../index.html");
-                        }
-                    });
-                }
                 break;
+        }
+    };
+    Game.prototype.endGameMessage = function () {
+        var actualBlock = this.blocks.length-2;
+        //if(actualBlock >= minBlockGain){
+        if (actualBlock >= localStorage.getItem("record")) {
+            Swal.fire({
+                title: 'Bom Jogo!',
+                text: 'Parabéns! Você conquistou no novo record', 
+                //text: 'Parabéns! Você ganhou o prêmio',
+                icon: 'success',
+                confirmButtonText:'Ok',
+                confirmButtonColor:'#509d45',
+            }).then((result) => {
+                window.location.replace("../index.html");
+            });
+        }else{
+            Swal.fire({
+                title: 'Ops, você não conseguiu bater o record.',
+                //title: 'Ops, você não atingiu a pontuação mínima.',
+                text: "Deseja Jogar novamente?",
+                icon: 'error',
+                showCancelButton: true,
+                confirmButtonColor: '#509d45',
+                cancelButtonColor: '#024053',
+                confirmButtonText: 'Sim',
+                cancelButtonText: 'Não'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    this.restartGame();
+                }else{
+                    window.location.replace("../index.html");
+                }
+            });
         }
     };
     Game.prototype.startGame = function () {
@@ -331,9 +338,32 @@ var Game = /* @class */ (function () {
         }     
         SceneRecord();   
     };
+    Game.prototype.restartGame = function () {
+        var _this = this;
+        this.updateState(this.STATES.RESETTING);
+        var oldBlocks = this.placedBlocks.children;
+        var removeSpeed = 0.2;
+        var delayAmount = 0.02;
+        var _loop_1 = function (i) {
+            TweenLite.to(oldBlocks[i].scale, removeSpeed, { x: 0, y: 0, z: 0, delay: (oldBlocks.length - i) * delayAmount, ease: Power1.easeIn, onComplete: function () { return _this.placedBlocks.remove(oldBlocks[i]); } });
+            TweenLite.to(oldBlocks[i].rotation, removeSpeed, { y: 0.5, delay: (oldBlocks.length - i) * delayAmount, ease: Power1.easeIn });
+        };
+        for (var i = 0; i < oldBlocks.length; i++) {
+            _loop_1(i);
+        }
+        var cameraMoveSpeed = removeSpeed * 2 + (oldBlocks.length * delayAmount);
+        this.stage.setCamera(2, cameraMoveSpeed);
+        var countdown = { value: this.blocks.length - 1 };
+        TweenLite.to(countdown, cameraMoveSpeed, { value: 0, onUpdate: function () { _this.scoreContainer.innerHTML = String(Math.round(countdown.value)); } });
+        this.blocks = this.blocks.slice(0, 1);
+        setTimeout(function () {
+            _this.startGame();
+        }, cameraMoveSpeed * 1000);
+    };
 
     Game.prototype.endGame = function () {
         this.updateState(this.STATES.ENDED);
+        this.endGameMessage();
     };
     Game.prototype.tick = function () {
         var _this = this;
