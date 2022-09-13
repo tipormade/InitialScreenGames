@@ -1,0 +1,35 @@
+#formulario-teste-06eaee3265b218b1af7f .bricks--component {
+  border: 0;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-section-l7gghsgb {
+  background: inherit;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-section-l7gghsgb > div {
+  background-color: inherit;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh {
+  background: inherit;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh > div {
+  background-color: inherit;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh label {
+  font-size: 1.2em;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh label.bricks-form__label:last-child {
+  font-size: 0.9em;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh input {
+  border-radius: 10px;
+}
+#formulario-teste-06eaee3265b218b1af7f #rd-column-l7gghsgh button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.btn-close {
+  color: red;
+}
+
+/*# sourceMappingURL=rdstation.css.map */

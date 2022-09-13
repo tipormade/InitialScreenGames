@@ -1,0 +1,49 @@
+$btn:#fff;
+$roundInput: 10px;
+
+
+#formulario-teste-06eaee3265b218b1af7f {
+    .bricks--component {
+        border: 0;
+    }
+
+    #rd-section-l7gghsgb {
+        background: inherit;
+
+        & > div {
+            background-color: inherit;
+        }
+
+    }
+
+    #rd-column-l7gghsgh {
+        background: inherit;
+
+        & > div {
+            background-color: inherit;
+        }
+        label {
+            font-size: 1.2em;
+        }
+        
+        label.bricks-form__label:last-child {
+            font-size: 0.9em;
+        }
+
+        input {
+            border-radius: $roundInput;
+        }
+
+        button {
+            background-color: #fff;
+            color: #000;
+            border-radius: $roundInput;
+        }
+    }
+
+}
+
+.btn-close {
+    color: red;
+}
+
