@@ -240,7 +240,7 @@ var Game = /* @class */ (function () {
     Game.prototype.endGameMessage = function () {
         var actualBlock = this.blocks.length-2;
         //if(actualBlock >= minBlockGain){
-        if (actualBlock >= localStorage.getItem("record")) {
+        if (actualBlock > localStorage.getItem("record")) {
             Swal.fire({
                 title: 'Bom Jogo!',
                 text: 'Parabéns! Você conquistou no novo record', 
