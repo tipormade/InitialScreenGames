@@ -40,7 +40,7 @@ function checkWinnerFinal() {
         confirmButtonColor: '#509d45',
         confirmButtonText: 'Ok',
       }).then((result) => {
-        window.location.replace('../InitialScreenBubbles.html');
+        window.location.replace('../');
       });
     }
   } else if (winner == ai) {

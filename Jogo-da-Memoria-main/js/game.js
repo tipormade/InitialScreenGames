@@ -361,7 +361,7 @@ const startTimer = () => {
           if (result.isConfirmed) {
           window.location.replace("index.html")
           }else{
-          window.location.replace("../InitialScreenBubbles.html")
+          window.location.replace("../")
           }
       });
         disableAllCard();
