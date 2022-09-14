@@ -240,16 +240,16 @@ var Game = /* @class */ (function () {
     Game.prototype.endGameMessage = function () {
         var actualBlock = this.blocks.length-2;
         //if(actualBlock >= minBlockGain){
-        if (actualBlock > localStorage.getItem("record")) {
+        if (actualBlock >= localStorage.getItem("record")) {
             Swal.fire({
                 title: 'Bom Jogo!',
-                text: 'Parabéns! Você conquistou no novo record', 
+                text: 'Parabéns! Você conquistou o novo record', 
                 //text: 'Parabéns! Você ganhou o prêmio',
                 icon: 'success',
                 confirmButtonText:'Ok',
                 confirmButtonColor:'#509d45',
             }).then((result) => {
-                window.location.replace("../");
+                window.location.replace("../selecao.html");
             });
         }else{
             Swal.fire({
@@ -266,7 +266,7 @@ var Game = /* @class */ (function () {
                 if (result.isConfirmed) {
                     this.restartGame();
                 }else{
-                    window.location.replace("../");
+                    window.location.replace("../selecao.html");
                 }
             });
         }
