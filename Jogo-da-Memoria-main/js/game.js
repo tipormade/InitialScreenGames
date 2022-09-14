@@ -233,7 +233,7 @@ const checkEndGame = () => {
           confirmButtonColor: '#509d45',
           confirmButtonText: 'Ok',
         }).then( (result) => {
-          window.location.replace("../InitialScreenBubbles.html");
+          window.location.replace("../");
         })},500);
 
     

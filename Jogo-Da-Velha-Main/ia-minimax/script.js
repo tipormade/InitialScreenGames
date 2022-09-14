@@ -32,7 +32,7 @@ function checkWinnerFinal() {
   } else if (winner == human) {
     xScore++;
     xScoreText.innerHTML = xScore;
-    if (xScore >= 3) {
+    if (xScore >= 2) {
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você ganhou!', 
@@ -60,7 +60,7 @@ function checkWinnerFinal() {
         if (result.isConfirmed) {
           window.location.replace('index.html');
         } else {
-          window.location.replace('../InitialScreenBubbles.html');
+          window.location.replace('../');
         }
       });
     }
