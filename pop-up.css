@@ -29,36 +29,25 @@
 }
 
 .popup.active {
-    padding: 20px;
     transform: scale(1);
-    top: 45em;
-}
-
-.btn-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    top: 32vh;
 }
 
 .content {
     padding-bottom: 100px;
 }
 
-.btn-close div {
+.btn-close  {
+    padding: 0.35em 0.35em;
     position: absolute;
-    display: flex;
-    bottom: -55px;
-    width: 70px;
-    height: 70px;
-    background: #fff;
-    transform: rotate(45deg);
-    color: #040305;
-    font-size: 3em;
+    bottom: -58px;
+    font-size: 1.5em;
     justify-content: center;
     align-items: center;
-    transition: 1s;
-    margin-right: 86%;
+    margin-right: 0.3em;
+    opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 50%;
 }
 
 .btn-close div:hover {
@@ -121,6 +110,7 @@
 }
 
 .togglebtn {
+    z-index: 1001 !important;
     position: relative;
     min-width: 400px;
     min-height: 100px;
@@ -129,9 +119,9 @@
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #000;
-    background: #03fb0b;
-    background: linear-gradient(90deg, rgb(57, 243, 0) 0%, rgb(86, 247, 0) 100%);
+    color: white;
+    background: #509d45;
+    background: linear-gradient(90deg, #509d45 0%, #509d45 100%);
     border: none;
     border-radius: 1000px;
     transition: all 0.3s ease-in-out 0s;
@@ -146,8 +136,8 @@
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #00ff1a;
-    box-shadow: 0 0 60px #3cff00a3;
+    border: 6px solid #509d45;
+    box-shadow: 0 0 60px #509d45;
 
     top: 50%;
     left: 50%;
@@ -172,7 +162,7 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 5px solid #2bff00;
+    border: 5px solid #37df5b;
     position: absolute;
     z-index: -1;
     top: 50%;

@@ -249,7 +249,7 @@ var Game = /* @class */ (function () {
                 confirmButtonText:'Ok',
                 confirmButtonColor:'#509d45',
             }).then((result) => {
-                window.location.replace("../index.html");
+                window.location.replace("../InitialScreenBubbles.html");
             });
         }else{
             Swal.fire({
@@ -266,7 +266,7 @@ var Game = /* @class */ (function () {
                 if (result.isConfirmed) {
                     this.restartGame();
                 }else{
-                    window.location.replace("../index.html");
+                    window.location.replace("../InitialScreenBubbles.html");
                 }
             });
         }

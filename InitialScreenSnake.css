@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+@font-face {
+    font-family: 'Golca';
+    src: url(../pepper-type-golca/Pepper\ Type\ -\ Golca-ExtraLight.otf);
+}
+
 body {
     background: #1a1a1a;
     margin: 0%;
@@ -6,6 +14,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
 }
 
 #formulario-teste-06eaee3265b218b1af7f h2{
@@ -49,7 +59,7 @@ body {
 
 #fundoAnimado i.hover {
     transition: 0s;
-    color: #1eff00;
+    color: #3BF75B;
     text-shadow: 0 0 120px #fff;
 }
 
@@ -68,19 +78,17 @@ body {
     margin: 0;
 }
 
-.row{
+.row-title{
+    z-index: 1001 !important;
+    padding-top: 150px;
     align-items: center;
     justify-content: center;
 }
 
-.row-title{
-z-index: 1001 !important;
-padding-top: 150px;
-}
-
 .row-subtitle{
-    padding-top: 27em;
-    padding-right: 3.7em;
+    z-index: 1001 !important;
+    padding-top: 12em;
+    padding-right: 1.8em;
 }
 
 h1{
@@ -92,7 +100,6 @@ h1{
     color: white;
     padding: 0%;
 }
-
 
 h2{
     z-index: 1001 !important;
@@ -107,7 +114,7 @@ h2{
     color: white;
     font-size: 120px;
     padding-right: 0.8em;
-    vertical-align: -2.4em;
+    vertical-align: -2.3em;
     animation: flickflick 3s infinite;
 }
 @keyframes flickflick {
@@ -124,7 +131,7 @@ h3{
     font-family: 'Golca', sans-serif;
     z-index: 1001 !important;
     font-weight: bolder;
-    font-size: 7em;
+    font-size: 3em;
     letter-spacing: 5px;
     line-height: 0%;
 }
@@ -165,14 +172,6 @@ h3{
 
 .content h1 {
     text-align: center;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 .content {
