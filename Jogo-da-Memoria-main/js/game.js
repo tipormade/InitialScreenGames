@@ -233,7 +233,7 @@ const checkEndGame = () => {
           confirmButtonColor: '#509d45',
           confirmButtonText: 'Ok',
         }).then( (result) => {
-          window.location.replace("../");
+          window.location.replace("../selecao.html");
         })},500);
 
     
@@ -361,7 +361,7 @@ const startTimer = () => {
           if (result.isConfirmed) {
           window.location.replace("index.html")
           }else{
-          window.location.replace("../InitialScreenBubbles.html")
+          window.location.replace("../selecao.html")
           }
       });
         disableAllCard();
