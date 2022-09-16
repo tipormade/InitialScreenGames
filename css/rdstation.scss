@@ -16,18 +16,19 @@ $roundInput: 10px;
 
     }
 
-    #rd-column-l7gghsgh {
+    #rd-column-l7gghsgh, #rd-column-l7gghsgd {
         background: inherit;
 
         & > div {
             background-color: inherit;
         }
+        
         label {
             font-size: 1em;
         }
         
         label.bricks-form__label:last-child {
-            font-size: 0.9em;
+            font-size: 0.6em;
         }
 
         input {
@@ -39,6 +40,10 @@ $roundInput: 10px;
             color: #000;
             border-radius: $roundInput;
         }
+    }
+
+    .error {
+        color: green;
     }
 
 }
