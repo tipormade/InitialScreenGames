@@ -30,7 +30,7 @@
 
 .popup.active {
     transform: scale(1);
-    top: 32vh;
+    top: 36vh;
 }
 
 .content {
