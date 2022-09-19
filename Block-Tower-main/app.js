@@ -5,7 +5,7 @@ var Mycolors = [
 
 var changeColor = true;
 
-const minBlockGain = 10;
+const minBlockGain = 15;
 
 var Stage =  /** @class */ (function () {
     function Stage() {
@@ -239,12 +239,12 @@ var Game = /* @class */ (function () {
     };
     Game.prototype.endGameMessage = function () {
         var actualBlock = this.blocks.length-2;
-        //if(actualBlock >= minBlockGain){
-        if (actualBlock >= localStorage.getItem("record")) {
+        if(actualBlock >= minBlockGain){
+        //if (actualBlock >= localStorage.getItem("record")) {
             Swal.fire({
                 title: 'Bom Jogo!',
-                text: 'Parabéns! Você conquistou o novo record', 
-                //text: 'Parabéns! Você ganhou o prêmio',
+                // text: 'Parabéns! Você conquistou o novo record.', 
+                text: 'Parabéns! Você ganhou o prêmio.',
                 icon: 'success',
                 confirmButtonText:'Ok',
                 confirmButtonColor:'#509d45',
@@ -253,8 +253,8 @@ var Game = /* @class */ (function () {
             });
         }else{
             Swal.fire({
-                title: 'Ops, você não conseguiu bater o record.',
-                //title: 'Ops, você não atingiu a pontuação mínima.',
+                // title: 'Ops, você não conseguiu bater o record.',
+                title: 'Ops, você não atingiu a pontuação mínima.',
                 text: "Deseja Jogar novamente?",
                 icon: 'error',
                 showCancelButton: true,
