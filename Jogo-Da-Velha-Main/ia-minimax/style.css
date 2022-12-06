@@ -524,7 +524,8 @@ h3 {
   width: 100vw;
   height: 100vh;
   margin-top: 50vw;
-  box-shadow: 0 -2em 1500px #509E45;
+  box-shadow: 0 -2em 1500px #509e45;
+  
 }
 
 body::-webkit-scrollbar {
@@ -547,7 +548,7 @@ body::-webkit-scrollbar-button {
   }
 
   .game {
-    padding-top: 8em;
+    padding-top: 10em;
   }
 
   .swal2-popup{

@@ -315,7 +315,7 @@ h3 {
 
 /* foi alterado a imagem para festa do xixo */
 .back {
-  background-image: url("..//Novo\ Projeto.png");
+  background-image: url("..//images/FestadoXixo2022.png.png");
   backface-visibility: hidden;
 }
 
@@ -327,7 +327,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   margin-top: 95px;
-  box-shadow: 0 -10em 2500px #7df76d;
+  box-shadow: 0 -1em 1500px #509e45;
 }
 
 body::-webkit-scrollbar {

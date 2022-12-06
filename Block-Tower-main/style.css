@@ -133,7 +133,7 @@ body {
   height: 100vh;
   margin: 0px;
   margin-top: 75vh;
-  box-shadow: 0 -10em 2500px #7df76d;
+  box-shadow: 0 -1em 1500px #509e45;
 }
 
 .row {
@@ -394,8 +394,8 @@ h3 {
 @media all and (max-width: 1334px) {
   .imgLogo {
     position: absolute;
-    width: 30em;
-    margin-left: 5em;
+    width: 25em;
+    margin-left: 7em;
   }
 
   .subtitle {
