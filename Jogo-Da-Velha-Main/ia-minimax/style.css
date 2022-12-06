@@ -194,7 +194,7 @@ main {
   cursor: pointer;
 }
 
-#button00 {
+/* #button00 {
   border-right-width: 20px;
   border-right-style: solid;
   border-right-color: white;
@@ -255,7 +255,7 @@ main {
   border-top-width: 20px;
   border-top-style: solid;
   border-top-color: white;
-}
+} */
 
 
 .hidden {
@@ -524,7 +524,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   margin-top: 50vw;
-  box-shadow: 0 -10em 2500px #7df76d;
+  box-shadow: 0 -2em 1500px #509E45;
 }
 
 body::-webkit-scrollbar {
@@ -559,7 +559,7 @@ body::-webkit-scrollbar-button {
     border-radius: 30px !important;
   }
 
-  #button00 {
+  /* #button00 {
     border-right-width: 20px;
     border-right-style: solid;
     border-right-color: white;
@@ -620,7 +620,7 @@ body::-webkit-scrollbar-button {
     border-top-width: 20px;
     border-top-style: solid;
     border-top-color: white;
-  }
+  } */
   }
 
 
@@ -646,7 +646,7 @@ body::-webkit-scrollbar-button {
     border: #000;
   }
 
-  #button00,
+  /* #button00,
   #button01,
   #button02,
   #button10,
@@ -722,7 +722,7 @@ body::-webkit-scrollbar-button {
     border-top-style: solid;
     border-top-color: white;
   }
-
+ */
 
 .game {
 
