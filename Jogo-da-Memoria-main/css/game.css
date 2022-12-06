@@ -315,7 +315,7 @@ h3 {
 
 /* foi alterado a imagem para festa do xixo */
 .back {
-  background-image: url("..//images/FestadoXixo2022.png.png");
+  background-image: url("..//images/back.png");
   backface-visibility: hidden;
 }
 
