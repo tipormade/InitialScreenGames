@@ -18,7 +18,7 @@ body {
   text-align: center;
   font-size: 150px;
   transition: transform 0.5s ease;
-  color: rgb(163, 212, 126);
+  color: rgb(255, 255, 255);
   transform: translatey(-) scale(1);
 }
 #container #game {
@@ -169,7 +169,7 @@ h2 {
   height: 150px;
   padding-left: 0%;
 }
-
+/* 
 .bi-controller {
   position: relative;
   color: white;
@@ -177,7 +177,7 @@ h2 {
   vertical-align: -2.9em;
   padding-right: 3.1em;
   animation: flickflick 3s infinite;
-}
+} */
 @keyframes flickflick {
   0% {
     text-shadow: 0 0 0em white;
@@ -403,20 +403,23 @@ h3 {
     padding-top: 8em;
   }
 
-  .swal2-popup{
-
-
+  .swal2-popup {
     background-color: #000 !important;
     color: white !important;
     border: 5px solid #509e45 !important;
     border-radius: 30px !important;
   }
 
-
   #container .game-ready #record {
     padding-bottom: 100px;
-    color: #509d45;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
     font-size: 50px;
+  }
+
+  #container .game-over h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
   }
 
   .fundo {
