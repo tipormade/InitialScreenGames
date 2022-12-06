@@ -35,6 +35,15 @@ body {
   margin-bottom: 100px;
 }
 
+.btn-voltar{
+
+  background: #000;
+  color: white;
+  border: 2px solid #509d45;
+  width: 130px;
+  height: 50px;
+
+}
 #title h2 {
   color: black;
   text-align: center;
