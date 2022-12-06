@@ -1,40 +1,47 @@
-body{
+body {
   background-color: black;
   margin: 0%;
   padding: 0%;
   overflow: hidden;
-  position: fixed; top: 0; left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.row{
+.row {
   padding: 0%;
   align-items: center;
   justify-content: start;
 }
 
-.row-title{
+.row-title {
   margin: 15px;
   padding: 15px;
 }
 
-h1{
+.imgLogo {
+  width: 20em;
+  margin-right: 175px;
+}
+
+h1 {
   text-align: start;
   margin: 15px;
   padding: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 4em;
   z-index: 1001 !important;
   font-weight: 900;
   color: white;
 }
 
-.col-clock{
+.col-clock {
   text-align: end;
   color: white;
   font-size: 1.7em;
 }
 
-h2{
+h2 {
   z-index: 1001 !important;
   text-align: start;
   padding: 0%;
@@ -43,7 +50,7 @@ h2{
   height: 150px;
 }
 
-.bi-controller{
+.bi-controller {
   color: white;
   font-size: 75px;
   vertical-align: -2.8em;
@@ -51,20 +58,28 @@ h2{
   animation: flickflick 3s infinite;
 }
 @keyframes flickflick {
-  0%{ text-shadow:0 0 0em white;}
-  25%{ text-shadow:0 0 1em white;}
-  50%{ text-shadow:0 0 0.08em white;}
-  100%{ text-shadow:0 0 0em white;}
+  0% {
+    text-shadow: 0 0 0em white;
+  }
+  25% {
+    text-shadow: 0 0 1em white;
+  }
+  50% {
+    text-shadow: 0 0 0.08em white;
+  }
+  100% {
+    text-shadow: 0 0 0em white;
+  }
 }
-.subtitle{
+.subtitle {
   padding-top: 25px;
 }
 
-h3{
+h3 {
   padding-top: 5px;
   margin: 0%;
   text-align: center;
-  font-family: 'Golca', sans-serif;
+  font-family: "Golca", sans-serif;
   z-index: 1001 !important;
   font-weight: bolder;
   font-size: 3em;
@@ -72,20 +87,20 @@ h3{
   line-height: 0%;
 }
 
-  .el1{
-  color: #7DF76D;
+.el1 {
+  color: #7df76d;
   text-shadow: 0 0 1em #509d45;
   animation: glitch1 2.5s infinite;
 }
 .el2 {
   padding-top: 0%;
-  color: #3BF75B;
+  color: #3bf75b;
   text-shadow: 0 0 1em #509d45;
   animation: glitch2 2.5s infinite;
 }
 .el3 {
   color: #509d45;
-  text-shadow:0 0 1em #509d45;
+  text-shadow: 0 0 1em #509d45;
   animation: glitch3 2.5s infinite;
 }
 @keyframes glitch1 {
@@ -253,7 +268,7 @@ h3{
   }
 }
 
-.cards{
+.cards {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -298,8 +313,9 @@ h3{
   transform: rotateY(180deg);
 }
 
+/* foi alterado a imagem para festa do xixo */
 .back {
-  background-image: url('../images/back.png');
+  background-image: url("..//Novo\ Projeto.png");
   backface-visibility: hidden;
 }
 
@@ -307,16 +323,87 @@ h3{
   transform: rotateY(180deg);
 }
 
-.fundo{
+.fundo {
   width: 100vw;
   height: 100vh;
   margin-top: 95px;
-  box-shadow:0 -10em 2500px #7DF76D;
+  box-shadow: 0 -10em 2500px #7df76d;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-body::-webkit-scrollbar-button{
+body::-webkit-scrollbar-button {
   display: none;
+}
+
+@media all and (max-width: 1334px) {
+  h3 {
+    position: absolute;
+    letter-spacing: 0cm;
+  }
+
+  .col-clock {
+    position: absolute;
+    text-align: center;
+    margin-left: 230px;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #509d45;
+  }
+  /* foi mudado a cor do tempo ele e diferente do */
+  #timer {
+    color: white;
+    font-size: 30px;
+  }
+
+  .cards {
+    width: 85%;
+    margin-left: 60px;
+    padding: 20px 20px 50px;
+  }
+
+  .swal2-popup{
+
+
+    background-color: #000 !important;
+    color: white !important;
+    border: 5px solid #509e45 !important;
+    border-radius: 30px !important;
+  }
+
+
+  .row-title {
+    padding: 15px;
+  }
+
+  .container {
+    margin-right: 100px;
+  
+  }
+
+}
+
+@media all and (max-width: 500px){
+
+  .cards{
+
+    width: 70%;
+    margin-left: 0;
+  
+  }
+
+
+
+  .imgLogo {
+    width: 15em;
+    margin-right: 125px;
+    
+  }
+
+  .el1, .el2, .el3{
+
+    font-size: 30px;
+  }
+
 }

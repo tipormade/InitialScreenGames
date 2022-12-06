@@ -2,7 +2,7 @@ const ul = document.querySelector("ul");
 
 const random = (min, max) => Math.random() * (max - min) + min;
 
-const randomColors = ["#1D782C", "#70DE62", "#37df5b", "#4af06e", "#7DF76D", "#9fd69d", "#D5E4CF"];
+const randomColors = ["#ff5450", "#ffde43", "#000013", "#b3000b", "#ca5770", "#ffcb14", "#121920"];
 
 for (let i = 0; i < 50; i++) {
     const li = document.createElement("li");
@@ -55,4 +55,8 @@ function counter3(){
     counterTower++;
     localStorage.setItem("counterTower", counterTower.toString());
 };
+
+
+
+
 

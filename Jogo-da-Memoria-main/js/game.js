@@ -359,7 +359,7 @@ const startTimer = () => {
           cancelButtonText: 'Não'
       }).then((result) => {
           if (result.isConfirmed) {
-          window.location.replace("index.html")
+          window.location.replace("index.htmld")
           }else{
           window.location.replace("../")
           }
@@ -378,3 +378,4 @@ window.onload = () => {
     startTimer();
   },1000)
 }
+
