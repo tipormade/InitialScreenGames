@@ -359,7 +359,7 @@ const startTimer = () => {
           cancelButtonText: 'Não'
       }).then((result) => {
           if (result.isConfirmed) {
-          window.location.replace("index.htmld")
+          window.location.replace("index.html")
           }else{
           window.location.replace("../")
           }
