@@ -374,3 +374,8 @@ var Game = /* @class */ (function () {
     return Game;
 }());
 var game = new Game();
+
+function volta(){
+
+    window.history.back();
+}

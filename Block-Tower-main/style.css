@@ -21,6 +21,21 @@ body {
   color: rgb(255, 255, 255);
   transform: translatey(-) scale(1);
 }
+
+.btn-voltar{
+
+  background: #000;
+  color: white;
+  border: 2px solid #509d45;
+  width: 130px;
+  height: 50px;
+  margin-left: 35em;
+  position: absolute;
+  z-index: 1001 !important;
+  margin-bottom: 130px;
+
+}
+
 #container #game {
   position: absolute;
   top: 0;
