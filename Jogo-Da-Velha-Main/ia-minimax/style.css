@@ -35,14 +35,12 @@ body {
   margin-bottom: 100px;
 }
 
-.btn-voltar{
-
+.btn-voltar {
   background: #000;
   color: white;
   border: 2px solid #509d45;
   width: 130px;
   height: 50px;
-
 }
 #title h2 {
   color: black;
@@ -71,7 +69,6 @@ main {
   justify-content: center;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 200px 200px;
-
 }
 
 .game button {
@@ -265,7 +262,6 @@ main {
   border-top-style: solid;
   border-top-color: white;
 } */
-
 
 .hidden {
   visibility: hidden;
@@ -534,7 +530,6 @@ h3 {
   height: 100vh;
   margin-top: 50vw;
   box-shadow: 0 -2em 1500px #509e45;
-  
 }
 
 body::-webkit-scrollbar {
@@ -542,6 +537,34 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-button {
   display: none;
+}
+
+@media all and (min-width: 1080px) {
+  .row-title {
+    padding-top: 4em !important;
+  }
+
+  .game {
+    padding-top: 15em !important;
+  }
+
+  .score {
+    padding-top: 5em !important;
+  }
+
+  .btn-voltar {
+    margin-top: 5em;
+    font-size: 25px;
+    width: 12em;
+    height: 4em;
+    border-radius: 10px;
+  }
+
+  .fundo{
+
+    box-shadow: 0 -15em 2500px #509e45;
+
+  }
 }
 
 @media all and (max-width: 1334px) {
@@ -560,9 +583,7 @@ body::-webkit-scrollbar-button {
     padding-top: 10em;
   }
 
-  .swal2-popup{
-
-
+  .swal2-popup {
     background-color: #000 !important;
     color: white !important;
     border: 5px solid #509e45 !important;
@@ -631,8 +652,7 @@ body::-webkit-scrollbar-button {
     border-top-style: solid;
     border-top-color: white;
   } */
-  }
-
+}
 
 @media all and (max-width: 500px) {
   .row-title {
@@ -734,36 +754,26 @@ body::-webkit-scrollbar-button {
   }
  */
 
-.game {
-
-  grid-template-columns: 33% 33% 29%;
-  grid-template-rows: 31% 31% 31%;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-top: 2em;
-  
-}
-
-.game button {
-  height: 20vh;
-  width: 100%;
-}
-
-.score{
-
-  margin: -13px 10px ;
-
-}
-
-.swal2-popup{
-
-  background-color: #000 !important;
-  border: 8px solid #509e45 !important;
-  border-radius: 50px !important;
-}
-
+  .game {
+    grid-template-columns: 33% 33% 29%;
+    grid-template-rows: 31% 31% 31%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2em;
   }
 
+  .game button {
+    height: 20vh;
+    width: 100%;
+  }
 
-  
+  .score {
+    margin: -13px 10px;
+  }
 
+  .swal2-popup {
+    background-color: #000 !important;
+    border: 8px solid #509e45 !important;
+    border-radius: 50px !important;
+  }
+}

@@ -19,8 +19,7 @@ body {
   padding: 15px;
 }
 
-.btn-voltar{
-
+.btn-voltar {
   background: #000;
   color: white;
   border: 2px solid #509d45;
@@ -30,7 +29,16 @@ body {
   position: absolute;
   z-index: 100;
   padding: 0;
+}
 
+.btn-voltar1 {
+  background: #000;
+  color: white;
+  border: 2px solid #509d45;
+  width: 130px;
+  height: 50px;
+  margin-left: 440px;
+  z-index: 100 !important;
 }
 
 .imgLogo {
@@ -64,14 +72,14 @@ h2 {
   height: 150px;
 }
 
-.bi-controller {
+/* .bi-controller {
   color: white;
   font-size: 75px;
   vertical-align: -2.8em;
   padding-left: 355px;
   animation: flickflick 3s infinite;
-}
-@keyframes flickflick {
+} */
+/* @keyframes flickflick {
   0% {
     text-shadow: 0 0 0em white;
   }
@@ -84,7 +92,7 @@ h2 {
   100% {
     text-shadow: 0 0 0em white;
   }
-}
+} */
 .subtitle {
   padding-top: 25px;
 }
@@ -331,7 +339,6 @@ h3 {
 .back {
   background-image: url("..//images/Novo_Projeto_3.jpg");
   backface-visibility: hidden;
-
 }
 
 .reveal-card {
@@ -350,6 +357,56 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-button {
   display: none;
+}
+
+@media all and (min-width: 1080px) {
+  .btn-voltar {
+    display: none;
+  }
+
+  .row-title {
+    margin: 60px;
+    padding: 15px;
+  }
+
+  .imgLogo {
+    width: 25em;
+  }
+
+  .cards {
+    margin-left: 90px !important;
+  }
+
+  .btn-voltar1 {
+    margin-right: 20em !important;
+    width: 12em;
+    height: 4em;
+    border-radius: 10px;
+  }
+
+  h3{
+
+    margin-left: 60px;
+
+  }
+
+  .col-clock{
+
+    font-size: 45px !important;
+    padding-bottom: 25px !important;
+
+  }
+
+  #timer{
+
+    font-size: 35px !important ;
+  }
+
+  .contador{
+
+    padding-bottom: 100px !important;
+
+  }
 }
 
 @media all and (max-width: 1334px) {
@@ -378,15 +435,12 @@ body::-webkit-scrollbar-button {
     padding: 20px 20px 50px;
   }
 
-  .swal2-popup{
-
-
+  .swal2-popup {
     background-color: #000 !important;
     color: white !important;
     border: 5px solid #509e45 !important;
     border-radius: 30px !important;
   }
-
 
   .row-title {
     padding: 15px;
@@ -394,32 +448,24 @@ body::-webkit-scrollbar-button {
 
   .container {
     margin-right: 100px;
-  
   }
-
 }
 
-@media all and (max-width: 500px){
-
-  .cards{
-
+@media all and (max-width: 500px) {
+  .cards {
     width: 70%;
     margin-left: 0;
-  
   }
-
-
 
   .imgLogo {
     width: 15em;
     margin-right: 125px;
-    
   }
 
-  .el1, .el2, .el3{
-
+  .el1,
+  .el2,
+  .el3 {
     font-size: 30px;
     margin-bottom: -40px;
   }
-
 }

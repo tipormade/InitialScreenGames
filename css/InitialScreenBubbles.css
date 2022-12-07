@@ -436,6 +436,16 @@ li:hover {
   }
 }
 
+@media all and (min-width: 1080px) {
+  .row {
+    padding-top: 6em !important;
+  }
+
+  .fundo {
+    margin-top: 30vw;
+  }
+}
+
 @media all and (max-width: 1334px) {
   .row {
     align-items: center;
@@ -478,10 +488,7 @@ li:hover {
     font-size: 23px;
   }
 
-
-  span:nth-child(2){
-
+  span:nth-child(2) {
     width: 50px;
   }
-  
 }

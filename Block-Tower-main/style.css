@@ -406,6 +406,35 @@ h3 {
   }
 }
 
+@media all and (min-width: 1080px){
+
+  .btn-voltar{
+
+    margin-left: 50em;
+    margin-top: 20px;
+
+  }
+  
+  .imgLogo{
+
+    width: 30em !important;
+    margin-left: 12em !important;
+  }
+
+  #container .game-ready #record {
+    color: #ffffff !important;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0)!important;
+    font-size: 50px !important;
+  }
+
+  #container .game-over h2 {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0) !important;
+  }
+
+
+}
+
 @media all and (max-width: 1334px) {
   .imgLogo {
     position: absolute;
