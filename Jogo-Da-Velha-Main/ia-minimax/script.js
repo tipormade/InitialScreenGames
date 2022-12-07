@@ -32,7 +32,7 @@ function checkWinnerFinal() {
   } else if (winner == human) {
     xScore++;
     xScoreText.innerHTML = xScore;
-    if (xScore >= 2) {
+    if (xScore >= 3) {
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você ganhou!', 
