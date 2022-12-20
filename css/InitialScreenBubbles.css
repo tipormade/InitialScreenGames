@@ -53,24 +53,37 @@ body {
 }
 
 .row {
+  
   padding-top: 150px;
   align-items: center;
   justify-content: center;
 }
 
+.TituloH1{
+
+  font-size: 3em;
+  margin-right: 8em;
+}
+
 .row-title {
   z-index: 1001 !important;
-  padding-top: 150px;
+  padding-top: 1em;
+  
 }
 
 img {
   z-index: 1001 !important;
 }
 
-.imgLogo {
-  width: 25em;
-}
 
+.logoBBB{
+  
+  position: absolute;
+  width: 15em;
+  margin-left: 12em;
+  padding: 0;
+  padding-bottom: 13em;
+}
 h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -115,14 +128,14 @@ h2 {
 
 h3 {
   z-index: 1001 !important;
-  padding-top: 5px;
-  margin: 0%;
+  padding-top: 3px;
+  margin-right: 20em;
   text-align: end;
   font-family: "Golca", sans-serif;
   z-index: 1001 !important;
   font-weight: bolder;
-  font-size: 3em;
-  letter-spacing: 2px;
+  font-size: 2em;
+  letter-spacing: 3px;
   line-height: 0%;
 }
 
@@ -436,7 +449,7 @@ li:hover {
   }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (max-width: 1080px) {
   .row {
     padding-top: 6em !important;
   }
@@ -446,7 +459,7 @@ li:hover {
   }
 }
 
-@media all and (max-width: 1334px) {
+@media screen and (max-width: 800px) and (min-width:1334px){
   .row {
     align-items: center;
     justify-content: center;
@@ -468,27 +481,18 @@ li:hover {
   }
 }
 
-@media all and (max-width: 500px) {
-  .row {
-    width: 11em;
-    padding: 0%;
-    padding-top: 15px;
-    padding-bottom: 30px;
+
+@media screen and (max-width: 2560px) and (min-width: 1362px) {
+
+  .imgLogo{
+
+    width: 30em;
+    padding: 0;
+    margin: 0;
+
   }
 
-  .el1,
-  .el2,
-  .el3 {
-    font-size: 50px;
-  }
-
-  .cta {
-    width: 315px;
-    height: 150px;
-    font-size: 23px;
-  }
-
-  span:nth-child(2) {
-    width: 50px;
-  }
+  
 }
+
+

@@ -435,7 +435,7 @@ h3 {
 
 }
 
-@media all and (max-width: 1334px) {
+@media screen and (min-width: 800px) and (max-width:1334px) {
   .imgLogo {
     position: absolute;
     width: 25em;
@@ -478,3 +478,5 @@ h3 {
     padding-top: 20px;
   }
 }
+
+

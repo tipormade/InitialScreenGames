@@ -451,21 +451,3 @@ body::-webkit-scrollbar-button {
   }
 }
 
-@media all and (max-width: 500px) {
-  .cards {
-    width: 70%;
-    margin-left: 0;
-  }
-
-  .imgLogo {
-    width: 15em;
-    margin-right: 125px;
-  }
-
-  .el1,
-  .el2,
-  .el3 {
-    font-size: 30px;
-    margin-bottom: -40px;
-  }
-}
