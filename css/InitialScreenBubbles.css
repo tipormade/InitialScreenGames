@@ -44,6 +44,8 @@ body {
   background-color: rgb(40, 40, 40);
   font-family: "Poppins", sans-serif;
   font-size: 35px;
+  background-image: url(../assets/bbb23/BG_Generico_001\ \(5\).png) ;
+  background-size: cover;
 }
 
 .fundo {
@@ -53,37 +55,65 @@ body {
 }
 
 .row {
-  
   padding-top: 150px;
   align-items: center;
   justify-content: center;
+  padding-top: 15em;
+
 }
 
-.TituloH1{
 
-  font-size: 3em;
-  margin-right: 8em;
+.roboBBB{
+
+  position: absolute;
+  width: 27em;
+  padding-top: 18em;
+  margin-left:2em;
 }
+
 
 .row-title {
   z-index: 1001 !important;
   padding-top: 1em;
-  
+  padding-bottom: 5em;
 }
 
 img {
   z-index: 1001 !important;
 }
 
-
-.logoBBB{
-  
-  position: absolute;
+.logoBBB {
+  position: relative;
   width: 15em;
-  margin-left: 12em;
+  margin-left: 33em;
   padding: 0;
-  padding-bottom: 13em;
+  padding-top: 8em;
+
 }
+.logoPormade {
+  position: relative;
+  width: 17em;
+  margin-right: 30em;
+  padding-top: 8em;
+}
+
+.div-BBB{
+
+  position: absolute;
+
+}
+
+.div-pormade{
+
+  position: absolute;
+
+}
+
+.fundo{
+  margin-top: 29vh;
+} 
+
+
 h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -340,13 +370,13 @@ h3 {
   text-align: center;
   justify-content: center;
   color: rgb(0, 0, 0);
-  background: rgb(255, 206, 0);
+  background: #ff8e2a;
   transition: 0.5s;
-  box-shadow: 20px 20px 0 rgb(208, 0, 0);
+  box-shadow: 20px 20px 0 rgb(255, 255, 255);
   transform: skewX(-15deg);
 }
 .cta:hover {
-  color: rgb(208, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .cta span:nth-child(2) {
@@ -364,7 +394,7 @@ span {
 }
 
 span:nth-child(2) {
-  color: rgb(208, 0, 0);
+  color: rgb(0, 0, 0);
   width: 20px;
   margin-left: 30px;
   position: relative;
@@ -413,16 +443,15 @@ svg {
   padding-left: 15px;
 }
 
-li {
+li{
   list-style: none;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: block;
   position: absolute;
   animation: up 3s infinite alternate;
-}
-
-li:hover {
-  box-shadow: 0 0em 0.5em white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
 }
 
 @keyframes up {
@@ -431,11 +460,11 @@ li:hover {
     transform: translateY(0);
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.4;
   }
   100% {
     opacity: 0;
-    transform: translateY(-1920px);
+    transform: translateY(-150vh);
   }
 }
 
@@ -459,7 +488,7 @@ li:hover {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width:1334px){
+@media screen and (max-width: 800px) and (min-width: 1334px) {
   .row {
     align-items: center;
     justify-content: center;
@@ -481,18 +510,10 @@ li:hover {
   }
 }
 
-
 @media screen and (max-width: 2560px) and (min-width: 1362px) {
-
-  .imgLogo{
-
+  .imgLogo {
     width: 30em;
     padding: 0;
     margin: 0;
-
   }
-
-  
 }
-
-
