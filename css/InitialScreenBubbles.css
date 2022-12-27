@@ -44,35 +44,37 @@ body {
   background-color: rgb(40, 40, 40);
   font-family: "Poppins", sans-serif;
   font-size: 35px;
-  background-image: url(../assets/bbb23//BG_Generico_001\ \(5\).png);
+  /* background-image: url(../assets/bbb23//BG_Generico_001\ \(5\)_cleanup.png);
   background-size: cover;
+  position: relative; */
+  background: rgb(39,5,96);
+background: radial-gradient(circle, rgba(39,5,96,1) 0%, rgba(56,0,183,1) 100%);
+}
+
+.cabecalho {
+  position: absolute;
+  top: 0;
+align-items: center;
+padding: 15px 25px;
+max-height: 50vh;
+}
+
+
+.cabecalho img {
+  max-width: 100%;
   position: relative;
+
+}
+.cabecalho .col:last-child{ 
+  text-align: right;
 }
 
-.fundo {
-  margin-left: 50vw;
-  margin-top: 100vw;
-  box-shadow: 0 -17em 2500px #7df76d;
-}
-
-.row {
-  padding-top: 150px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 15em;
-}
 
 .roboBBB {
   position: absolute;
-  width: 27em;
-  padding-top: 18em;
-  margin-left: 2em;
-}
-
-.row-title {
-  z-index: 1001 !important;
-  padding-top: 1em;
-  padding-bottom: 5em;
+  width: 50vw;
+  top: 0em;
+  left: 4vw;
 }
 
 img {
@@ -80,29 +82,19 @@ img {
 }
 
 .logoBBB {
-  position: relative;
-  width: 15em;
-  margin-left: 33em;
-  padding: 0;
-  padding-top: 8em;
+  width: 25vw;
+  top: -3vw;
 }
 .logoPormade {
-  position: relative;
-  width: 17em;
-  margin-right: 30em;
-  padding-top: 8em;
-}
-
-.div-BBB {
-  position: absolute;
-}
-
-.div-pormade {
-  position: absolute;
+  width: 25vw;
+  top: -3vw;
 }
 
 .fundo {
   margin-top: 29vh;
+}
+.SelectJogos {
+  margin-top: 50vh;
 }
 
 h1 {
@@ -344,14 +336,6 @@ h3 {
   }
 }
 
-.col {
-  flex: 0;
-  z-index: 1001 !important;
-  margin: 15px;
-  padding: 15px;
-  width: max-content;
-}
-
 .cta {
   width: 570px;
   height: 150px;
@@ -459,6 +443,7 @@ li {
   }
 }
 
+/*
 @media (max-width: 500px) {
   .logoPormade {
     position: relative;
@@ -476,12 +461,7 @@ li {
   }
 
   .roboBBB {
-    position: absolute;
     width: 30em;
-    margin: 0;
-    padding: 0;
-    padding-top: 2em;
-    margin-left: 10%;
   }
 
 
@@ -506,7 +486,7 @@ li {
 }
 
 
-@media (max-width:700px) and (min-width:500px){
+@media (max-width:700px){
 
   .logoPormade {
     position: relative;
@@ -524,11 +504,6 @@ li {
 
   .roboBBB {
     position: absolute;
-    width: 40em;
-    margin: 0;
-    padding: 0;
-    margin-left: 5%;
-    padding-top: 1em;
   }
 
   .cta {
@@ -543,8 +518,25 @@ li {
     
   }
 
-
-
-
-  
 }
+
+@media screen and (max-width: 1334px){
+
+  .logoPormade{
+
+    width: 35%;
+    padding-top: 420px;
+    margin-left: 1em;
+  }
+
+.logoBBB{
+  
+  width: 30%;
+  margin: 0;
+  margin-left: 23em;
+  padding-top: 12em;
+}
+
+
+}
+*/
