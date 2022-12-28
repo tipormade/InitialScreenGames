@@ -6,6 +6,7 @@ var playButton = document.querySelector('#play');
 var xScore = 0;
 var oScore = 0;
 var winner = false;
+const maxVictory = 2;
 
 buttons.forEach(item => {
   item.innerHTML = '';
@@ -32,7 +33,7 @@ function checkWinnerFinal() {
   } else if (winner == human) {
     xScore++;
     xScoreText.innerHTML = xScore;
-    if (xScore >= 2) {
+    if (xScore >= maxVictory) {
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você ganhou!', 
@@ -46,7 +47,7 @@ function checkWinnerFinal() {
   } else if (winner == ai) {
     oScore++;
     oScoreText.innerHTML = oScore;
-    if (oScore >= 3) {
+    if (oScore >= maxVictory) {
       Swal.fire({
         title: 'Você perdeu',
         text: 'Deseja Jogar novamente?',

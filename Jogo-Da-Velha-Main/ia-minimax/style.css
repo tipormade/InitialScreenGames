@@ -31,20 +31,37 @@ body {
 
 
 .logoBBB {
-  width: 30%;
+  width: 25%;
 }
 .logoPormade {
-  width: 30%;
+  width: 25%;
   
 }
 
-.col{
-
+.divLogo{
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
+
+
 }
 
 
+
+.divResultadoX{
+
+  position: relative;
+  align-self: flex-start;  
+
+}
+
+.row-game {
+  flex-wrap: wrap;
+}
+
+ .game {
+  order: 1;
+ }
 
 .btn-voltar {
   background: #000;
@@ -83,7 +100,7 @@ main {
 }
 
 .game button {
-  color: #509d45;
+  color: #fc7c0b;
   border: none;
   font-size: 100pt;
   font-weight: bold;
@@ -94,11 +111,11 @@ main {
 }
 
 .game button:hover {
-  background-color: #4f9d4575;
+  background-color: #ffffff75;
 }
 
 #winner {
-  background-color: #4f9d45b7;
+  background-color: #ffffffb7;
   color: white;
   text-align: center;
   position: relative;
@@ -115,11 +132,10 @@ main {
 }
 
 .score {
-  display: flex;
-  flex-direction: column;
-  margin-top: 200px;
-  margin: 100px 300px 100px;
   text-align: center;
+  order: 1;
+  align-self: center;
+
 }
 
 .score h2 {
@@ -305,16 +321,6 @@ h1 {
   z-index: 1001 !important;
   font-weight: 900;
   color: white;
-}
-
-h2 {
-  z-index: 1001 !important;
-  text-align: center;
-  padding: 0%;
-  margin: 0%;
-  color: white;
-  height: 150px;
-  padding-left: 0%;
 }
 
 .bi-controller {
@@ -551,11 +557,11 @@ body::-webkit-scrollbar-button {
 
 @media all and (min-width: 1080px) {
   .row-title {
-    padding-top: 4em !important;
+    padding-top: 1em !important;
   }
 
   .game {
-    padding-top: 15em !important;
+    padding-top: 0em !important;
   }
 
   .score {
@@ -570,8 +576,18 @@ body::-webkit-scrollbar-button {
     border-radius: 10px;
   }
 
- 
 }
 
-@media screen and (max-width: 1334px) {
+@media (max-width: 1024px) {
+
+  .score {
+    order: 1;
+    flex: 50%;
+   }
+   .game {
+    order: 0;
+    flex: 100%;
+    margin-bottom: 50px;
+   }
+ 
 }
