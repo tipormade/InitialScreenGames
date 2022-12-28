@@ -1,38 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
-Color Pallete Beauty {
-  /*page*/
-  background-color: black;
-  background-color: white;
-  background-color: #2a836b;
-  background-color: #4ceb94;
-  background-color: #9cf7c5;
-  /*bubbles*/
-  background-color: #024053;
-  background-color: #136b69;
-  background-color: #499c70;
-  background-color: #6eb47d;
-  background-color: #9dcc9b;
-  background-color: #d5e4cf;
-}
 
-Color Pallete Ugly {
-  /*page*/
-  background-color: black;
-  background-color: white;
-  background-color: #7df76d;
-  background-color: #3bf75b;
-  background-color: #509d45;
-  /*bubbles*/
-  background-color: #1d782c;
-  background-color: #37df5b;
-  background-color: #4af06e;
-  background-color: #70de62;
-  background-color: #7df76d;
-  background-color: #9fd69d;
-  background-color: #d5e4cf;
-}
 
 @font-face {
   font-family: "Golca";
@@ -44,31 +13,34 @@ body {
   background-color: rgb(40, 40, 40);
   font-family: "Poppins", sans-serif;
   font-size: 35px;
-  /* background-image: url(../assets/bbb23//BG_Generico_001\ \(5\)_cleanup.png);
-  background-size: cover;
-  position: relative; */
-  background: rgb(39,5,96);
-background: radial-gradient(circle, rgba(39,5,96,1) 0%, rgba(56,0,183,1) 100%);
+  background: rgb(39, 5, 96);
+  background: radial-gradient(
+    circle,
+    rgba(39, 5, 96, 1) 0%,
+    rgba(56, 0, 183, 1) 100%
+  );
+  /* background: rgb(0,163,210);
+background: -moz-linear-gradient(198deg, rgba(0,163,210,1) 0%, rgba(49,0,191,1) 30%, rgba(3,33,75,1) 100%);
+background: -webkit-linear-gradient(198deg, rgba(0,163,210,1) 0%, rgba(49,0,191,1) 30%, rgba(3,33,75,1) 100%);
+background: linear-gradient(198deg, rgba(0,163,210,1) 0%, rgba(49,0,191,1) 30%, rgba(3,33,75,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a3d2",endColorstr="#03214b",GradientType=1); */
 }
 
 .cabecalho {
-  position: absolute;
+  position: relative;
   top: 0;
-align-items: center;
-padding: 15px 25px;
-max-height: 50vh;
+  align-items: center;
+  padding: 15px 25px;
+  max-height: 50vh;
 }
-
 
 .cabecalho img {
   max-width: 100%;
   position: relative;
-
 }
-.cabecalho .col:last-child{ 
+.cabecalho .col:last-child {
   text-align: right;
 }
-
 
 .roboBBB {
   position: absolute;
@@ -83,18 +55,19 @@ img {
 
 .logoBBB {
   width: 25vw;
-  top: -3vw;
+  top:  -2vw;
 }
 .logoPormade {
   width: 25vw;
-  top: -3vw;
+  top: -2vw;
 }
+
 
 .fundo {
   margin-top: 29vh;
 }
 .SelectJogos {
-  margin-top: 50vh;
+  margin-top: 10vh;
 }
 
 h1 {
@@ -336,6 +309,19 @@ h3 {
   }
 }
 
+.SelectJogos .row {
+  justify-content: space-evenly;
+}
+.SelectJogos .row .col {
+  flex: 0 1 auto;
+    width: auto;
+    padding: 4vw;
+}
+.cabecalho .row .col {
+  width: auto;
+  flex: 0 1 auto;
+}
+
 .cta {
   width: 570px;
   height: 150px;
@@ -345,7 +331,11 @@ h3 {
   text-align: center;
   justify-content: center;
   color: rgb(0, 0, 0);
-  background: #ff8e2a;
+  background: rgb(252,157,14);
+  background: -moz-radial-gradient(circle, rgba(252,157,14,1) 0%, rgba(252,79,7,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(252,157,14,1) 0%, rgba(252,79,7,1) 100%);
+  background: radial-gradient(circle, rgba(252,157,14,1) 0%, rgba(252,79,7,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fc9d0e",endColorstr="#fc4f07",GradientType=1);
   transition: 0.5s;
   box-shadow: 20px 20px 0 rgb(255, 255, 255);
   transform: skewX(-15deg);
@@ -443,100 +433,35 @@ li {
   }
 }
 
-/*
-@media (max-width: 500px) {
+@media screen and (max-width: 1334px) {
   .logoPormade {
-    position: relative;
-    width: 6em;
-    padding-bottom: 48%;
+    width: 45vh;
+    left: 12vh;
+    padding-bottom: 5vh;
   }
 
   .logoBBB {
-    position: relative;
-    width: 5em;
-    margin: 0;
-    padding: 0;
-    padding-top: 15%;
-    margin-left: 64%;
+    width: 45vh;
+    right: 8vh;
   }
 
-  .roboBBB {
-    width: 30em;
+  .roboBBB{
+
+    width: 78%;
+    left: 10vh;
+
   }
 
-
-  .row{
-
-    padding-top: 3em;
-    
-  }
 
   .fundo {
-    margin-top:  auto;
-    margin-top: 35vh;
-
+    margin-top: 0vh;
   }
 
   .cta {
-    width: 400px;
-    height: 120px;
-    font-size: 23px;
-  }
-
-}
-
-
-@media (max-width:700px){
-
-  .logoPormade {
-    position: relative;
-    width: 8em;
-    padding-bottom: 46%;
-  }
-
-  .logoBBB {
-    position: relative;
-    width: 7em;
-    margin: 0;
-    padding: 0;
-    margin-left: 64%;
-  }
-
-  .roboBBB {
-    position: absolute;
-  }
-
-  .cta {
-    width: 500px;
-    height: 140px;
-    font-size: 30px;
-  }
-
-  .row{
-
-    padding-top: 5em;
-    
-  }
-
-}
-
-@media screen and (max-width: 1334px){
-
-  .logoPormade{
-
-    width: 35%;
-    padding-top: 420px;
-    margin-left: 1em;
-  }
-
-.logoBBB{
+    width: 45vh;
+    height: 20vh;
+    font-size: 25px;
   
-  width: 30%;
-  margin: 0;
-  margin-left: 23em;
-  padding-top: 12em;
-}
-
+  }
 
 }
-*/

@@ -18,22 +18,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background: rgb(39, 5, 96);
+  background: radial-gradient(
+    circle,
+    rgba(39, 5, 96, 1) 0%,
+    rgba(56, 0, 183, 1) 100%
+  );
   overflow: hidden;
   top: 0;
   left: 0;
 }
 
-.imgLogo {
-  width: 30em;
+
+.logoBBB {
+  width: 30%;
+}
+.logoPormade {
+  width: 30%;
+  
 }
 
-#title h1 {
-  color: #509d45;
-  text-align: center;
-  font-size: 50pt;
-  margin-bottom: 100px;
+.col{
+
+  display: flex;
+  justify-content: space-between;
 }
+
+
 
 .btn-voltar {
   background: #000;
@@ -529,7 +540,6 @@ h3 {
   width: 100vw;
   height: 100vh;
   margin-top: 50vw;
-  box-shadow: 0 -2em 1500px #509e45;
 }
 
 body::-webkit-scrollbar {
@@ -560,98 +570,8 @@ body::-webkit-scrollbar-button {
     border-radius: 10px;
   }
 
-  .fundo{
-
-    box-shadow: 0 -15em 2500px #509e45;
-
-  }
+ 
 }
 
-@media screen and (min-width: 800px) and (max-width:1334px) {
-  .row-title {
-    padding: 10px;
-  }
-  .score {
-    margin: 80px 250px;
-  }
-
-  h2 {
-    height: 100px;
-  }
-
-  .game {
-    padding-top: 10em;
-  }
-
-  .swal2-popup {
-    background-color: #000 !important;
-    color: white !important;
-    border: 5px solid #509e45 !important;
-    border-radius: 30px !important;
-  }
-
-  /* #button00 {
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-    border-bottom-width: 20px;
-    border-bottom-color: white;
-    border-bottom-style: solid;
-  }
-
-  #button01 {
-    border-bottom-width: 20px;
-    border-bottom-color: white;
-    border-bottom-style: solid;
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-  }
-
-  #button02 {
-    border-bottom-width: 20px;
-    border-bottom-color: white;
-    border-bottom-style: solid;
-  }
-  #button10 {
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-  }
-
-  #button11 {
-
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-  }
-
-  #button20{
-
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-    border-top-width: 20px;
-    border-top-style: solid;
-    border-top-color: white;
-  }
-
-  #button21{
-
-    border-top-width: 20px;
-    border-top-style: solid;
-    border-top-color: white;
-    border-right-width: 20px;
-    border-right-style: solid;
-    border-right-color: white;
-  }
-
-  #button22{
-
-    border-top-width: 20px;
-    border-top-style: solid;
-    border-top-color: white;
-  } */
+@media screen and (max-width: 1334px) {
 }
-
-

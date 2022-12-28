@@ -2,7 +2,7 @@ const ul = document.querySelector("ul");
 
 const random = (min, max) => Math.random() * (max - min) + min;
 
-const randomColors = ["#ffde43", "#ffde43", "#000013", "#b3000b", "#ca5770", "#ffcb14", "#121920"];
+// const randomColors = ["#ffde43", "#ffde43", "#000013", "#b3000b", "#ca5770", "#ffcb14", "#121920"];
 const randomIcons = ["smile.svg", "Anjo.svg", "BigFone.svg", "Camarote.svg", "Coracao.svg", "Estaleca.svg", "Imune.svg", "LIDER.svg", "Paredao.svg", "Pipoca.svg","ROBBB_dir.svg", "ROBBB_mau_esq.svg"];
 const totalIcons = randomIcons.length;
 
