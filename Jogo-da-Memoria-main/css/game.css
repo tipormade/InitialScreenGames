@@ -1,5 +1,10 @@
 body {
-  background-color: black;
+  background-color: rgb(39, 5, 96);
+  background-color: radial-gradient(
+    circle,
+    rgba(39, 5, 96, 1) 0%,
+    rgba(56, 0, 183, 1) 100%
+  );
   margin: 0%;
   padding: 0%;
   overflow: hidden;
@@ -12,289 +17,44 @@ body {
   padding: 0%;
   align-items: center;
   justify-content: start;
+  padding-top: 25px;
+  align-items: flex-start;
 }
 
-.row-title {
-  margin: 15px;
-  padding: 15px;
+.logoPormade {
+  width: 70%;
+}
+
+.LogoBBB {
+  width: 70%;
 }
 
 .btn-voltar {
   background: #000;
-  color: white;
+  color: #fff;
   border: 2px solid #509d45;
   width: 130px;
   height: 50px;
-  margin-left: 31em;
   position: absolute;
   z-index: 100;
   padding: 0;
 }
 
 .btn-voltar1 {
-  background: #000;
-  color: white;
-  border: 2px solid #509d45;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid #fff ;
+  border-radius: 10px;
   width: 130px;
   height: 50px;
-  margin-left: 440px;
   z-index: 100 !important;
-}
-
-.imgLogo {
-  width: 20em;
-  margin-right: 175px;
-}
-
-h1 {
-  text-align: start;
-  margin: 15px;
-  padding: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 4em;
-  z-index: 1001 !important;
-  font-weight: 900;
-  color: white;
-}
-
-.col-clock {
-  text-align: end;
-  color: white;
-  font-size: 1.7em;
-}
-
-h2 {
-  z-index: 1001 !important;
-  text-align: start;
-  padding: 0%;
-  margin: 0%;
-  color: white;
-  height: 150px;
-}
-
-/* .bi-controller {
-  color: white;
-  font-size: 75px;
-  vertical-align: -2.8em;
-  padding-left: 355px;
-  animation: flickflick 3s infinite;
-} */
-/* @keyframes flickflick {
-  0% {
-    text-shadow: 0 0 0em white;
-  }
-  25% {
-    text-shadow: 0 0 1em white;
-  }
-  50% {
-    text-shadow: 0 0 0.08em white;
-  }
-  100% {
-    text-shadow: 0 0 0em white;
-  }
-} */
-.subtitle {
-  padding-top: 25px;
-}
-
-h3 {
-  padding-top: 5px;
-  margin: 0%;
-  text-align: center;
-  font-family: "Golca", sans-serif;
-  z-index: 1001 !important;
-  font-weight: bolder;
-  font-size: 3em;
-  letter-spacing: 7px;
-  line-height: 0%;
-}
-
-.el1 {
-  color: #7df76d;
-  text-shadow: 0 0 1em #509d45;
-  animation: glitch1 2.5s infinite;
-}
-.el2 {
-  padding-top: 0%;
-  color: #3bf75b;
-  text-shadow: 0 0 1em #509d45;
-  animation: glitch2 2.5s infinite;
-}
-.el3 {
-  color: #509d45;
-  text-shadow: 0 0 1em #509d45;
-  animation: glitch3 2.5s infinite;
-}
-@keyframes glitch1 {
-  0% {
-    transform: none;
-    opacity: 1;
-  }
-  7% {
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 1;
-  }
-  27% {
-    transform: none;
-    opacity: 1;
-  }
-  30% {
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 1;
-  }
-  52% {
-    transform: none;
-    opacity: 1;
-  }
-  55% {
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 1;
-  }
-  72% {
-    transform: none;
-    opacity: 1;
-  }
-  75% {
-    transform: skew(-8deg, 0.4deg);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 1;
-  }
-  100% {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-@keyframes glitch2 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(-5deg, 2deg);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(-2deg, 10deg);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(-10deg, 7deg);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(0.7deg, -5deg);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@keyframes glitch3 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(-10deg, -2.7deg);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(-3deg, 2deg);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(-1.3deg, 2deg);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(1deg, 4deg);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: black;
   height: -80vw;
   align-items: center;
   justify-content: center;
@@ -317,7 +77,7 @@ h3 {
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
-  background-color: #509d45;
+  background-color: #000000;
 }
 
 .face {
@@ -326,7 +86,7 @@ h3 {
   position: absolute;
   background-size: cover;
   background-position: center;
-  border: 2px solid #509d45;
+  border: 2px solid #fff;
   border-radius: 5px;
   transition: all 400ms ease;
 }
@@ -337,7 +97,8 @@ h3 {
 
 /* foi alterado a imagem para festa do xixo */
 .back {
-  background-image: url("..//images/Novo_Projeto_3.jpg");
+  background-color: #fff;
+  background-image: url("../../assets/bbb23/carta.png");
   backface-visibility: hidden;
 }
 
@@ -348,8 +109,7 @@ h3 {
 .fundo {
   width: 100vw;
   height: 100vh;
-  margin-top: 95px;
-  box-shadow: 0 -1em 1500px #509e45;
+  margin-top: 300px;
 }
 
 body::-webkit-scrollbar {
@@ -373,66 +133,61 @@ body::-webkit-scrollbar-button {
     width: 25em;
   }
 
-  .cards {
-    margin-left: 90px !important;
-  }
-
   .btn-voltar1 {
-    margin-right: 20em !important;
     width: 12em;
     height: 4em;
     border-radius: 10px;
   }
 
-  h3{
-
+  h3 {
     margin-left: 60px;
-
   }
 
-  .col-clock{
-
+  .col-clock {
     font-size: 45px !important;
-    padding-bottom: 25px !important;
-
   }
 
-  #timer{
-
+  #timer {
     font-size: 35px !important ;
   }
 
-  .contador{
-
+  .contador {
     padding-bottom: 100px !important;
+  }
+}
 
+@media all and (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
   }
 }
 
 @media all and (max-width: 1334px) {
-  h3 {
-    position: absolute;
-    letter-spacing: 0cm;
+
+
+  .contador {
+    padding-bottom: 50px !important;
   }
 
-  .col-clock {
-    position: absolute;
-    text-align: center;
-    margin-left: 230px;
-    padding-top: 100px;
-    font-size: 30px;
-    color: #509d45;
+  .col {
+    display: flex;
+    justify-content: center;
   }
-  /* foi mudado a cor do tempo ele e diferente do */
-  #timer {
-    color: white;
-    font-size: 30px;
-  }
-
   .cards {
-    width: 83%;
-    margin-left: 72px;
-    padding: 20px 20px 50px;
+    display: flex;
+    padding: 0px 50px 30px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 500vh;
   }
 
   .swal2-popup {
@@ -446,8 +201,20 @@ body::-webkit-scrollbar-button {
     padding: 15px;
   }
 
-  .container {
-    margin-right: 100px;
+  
+
+  .contador {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  a{
+
+    display: flex;
+    justify-content: center;
+    
+
   }
 }
-

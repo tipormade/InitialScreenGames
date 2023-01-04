@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(39, 5, 96);
+  background: #270560;
   background: radial-gradient(
     circle,
     rgba(39, 5, 96, 1) 0%,
@@ -36,6 +36,17 @@ body {
 .logoPormade {
   width: 25%;
   
+}
+
+.btn-voltar1 {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .divLogo{
@@ -63,13 +74,6 @@ body {
   order: 1;
  }
 
-.btn-voltar {
-  background: #000;
-  color: white;
-  border: 2px solid #509d45;
-  width: 130px;
-  height: 50px;
-}
 #title h2 {
   color: black;
   text-align: center;
@@ -227,68 +231,7 @@ main {
   cursor: pointer;
 }
 
-/* #button00 {
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-  border-bottom-width: 20px;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-}
 
-#button01 {
-  border-bottom-width: 20px;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-}
-
-#button02 {
-  border-bottom-width: 20px;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-}
-#button10 {
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-}
-
-#button11 {
-
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-}
-
-#button20{
-
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-  border-top-width: 20px;
-  border-top-style: solid;
-  border-top-color: white;
-}
-
-#button21{
-
-  border-top-width: 20px;
-  border-top-style: solid;
-  border-top-color: white;
-  border-right-width: 20px;
-  border-right-style: solid;
-  border-right-color: white;
-}
-
-#button22{
-
-  border-top-width: 20px;
-  border-top-style: solid;
-  border-top-color: white;
-} */
 
 .hidden {
   visibility: hidden;
@@ -564,9 +507,7 @@ body::-webkit-scrollbar-button {
     padding-top: 0em !important;
   }
 
-  .score {
-    padding-top: 5em !important;
-  }
+ 
 
   .btn-voltar {
     margin-top: 5em;

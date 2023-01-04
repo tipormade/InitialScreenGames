@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 const timer = document.querySelector('.timer');
-const timerInitial = 60;
+const timerInitial = 2000;
 
 timer.innerText = timerInitial;
 
@@ -377,5 +377,10 @@ window.onload = () => {
   setTimeout(()=> {
     startTimer();
   },1000)
+
 }
+
+
+
+
 
