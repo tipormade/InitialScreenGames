@@ -41,12 +41,24 @@ body {
 .btn-voltar1 {
   background: transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #fc7c0b;
   width: 130px;
   height: 40px;
   font-size: 20px;
   border-radius: 10px;
-  margin-left: 10px;
+ 
+}
+
+.btn-voltar2 {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fc7c0b;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  
+ 
 }
 
 .divLogo{
@@ -143,7 +155,7 @@ main {
 }
 
 .score h2 {
-  color: #509d45;
+  color: #fc7c0b;
   text-align: center;
   font-size: 60pt;
   font-weight: bold;
@@ -530,5 +542,28 @@ body::-webkit-scrollbar-button {
     flex: 100%;
     margin-bottom: 50px;
    }
+
  
 }
+
+
+@media screen and (max-width:1334px){
+
+  .btn-voltar2{
+
+    display: none;
+
+  }
+
+}
+
+@media  screen and (min-width: 1920px){
+
+  .btn-voltar1{
+
+    display: none;
+
+  }
+
+}
+

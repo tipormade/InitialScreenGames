@@ -469,6 +469,36 @@ li {
   }
 }
 
+@media  screen and (min-width: 1920px) {
+  
+  .roboBBB{
+
+    width: 48vh;
+    top: 20px;
+
+  }
+
+  .logoBBB{
+
+    margin-right: 30vh;
+
+  }
+
+  .logoPormade{
+
+    margin-left: 10vh;
+
+  }
+
+  .SelectJogos .row .col{
+
+    padding: 15vh;
+
+  }
+
+
+}
+
 @media screen and (max-width: 1334px) {
   .logoPormade {
     width: 45vh;
