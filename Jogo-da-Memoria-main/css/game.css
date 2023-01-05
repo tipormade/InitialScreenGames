@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/gobold");
+
 body {
   background-color: rgb(39, 5, 96);
   background-color: radial-gradient(
@@ -11,14 +13,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  font-family: "Gobold Uplow", sans-serif;
 }
 
 .row {
   padding: 0%;
-  align-items: center;
-  justify-content: start;
-  padding-top: 25px;
-  align-items: flex-start;
 }
 
 .logoPormade {
@@ -38,17 +37,19 @@ body {
   position: absolute;
   z-index: 100;
   padding: 0;
+  text-decoration: none;
 }
 
 .btn-voltar1 {
   background: transparent;
   color: #fff;
   font-size: 15px;
-  border: 2px solid #fc7c0b ;
+  border: 2px solid #fc7c0b;
   border-radius: 50px;
   width: 70px;
   height: 50px;
   z-index: 100 !important;
+  text-decoration: none;
 }
 
 .cards {
@@ -98,7 +99,7 @@ body {
 /* foi alterado a imagem para festa do xixo */
 .back {
   background-color: #fff;
-  background-image: url("../../assets/bbb23/carta.png");
+  background-image: url("..//Novo\ Projeto\ \(8\).png");
   backface-visibility: hidden;
 }
 
@@ -109,7 +110,6 @@ body {
 .fundo {
   width: 100vw;
   height: 100vh;
- 
 }
 
 body::-webkit-scrollbar {
@@ -122,37 +122,7 @@ body::-webkit-scrollbar-button {
 @media all and (min-width: 1080px) {
   .btn-voltar {
     display: none;
-  }
-
-  .row-title {
-    margin: 60px;
-    padding: 15px;
-  }
-
-  .imgLogo {
-    width: 25em;
-  }
-
-  .btn-voltar1 {
-    width: 12em;
-    height: 4em;
-    border-radius: 10px;
-  }
-
-  h3 {
-    margin-left: 60px;
-  }
-
-  .col-clock {
-    font-size: 45px !important;
-  }
-
-  #timer {
-    font-size: 35px !important ;
-  }
-
-  .contador {
-    padding-bottom: 100px !important;
+    text-decoration: none;
   }
 }
 
@@ -167,8 +137,6 @@ body::-webkit-scrollbar-button {
 }
 
 @media all and (max-width: 1334px) {
-
-
   .contador {
     padding-bottom: 50px !important;
   }
@@ -179,7 +147,7 @@ body::-webkit-scrollbar-button {
   }
   .cards {
     display: flex;
-    padding: 0px 50px 30px;
+    padding: 0px 50px 23px;
   }
 
   .grid {
@@ -201,20 +169,74 @@ body::-webkit-scrollbar-button {
     padding: 15px;
   }
 
-  
-
   .contador {
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     padding-top: 20px;
   }
 
-  a{
-
+  a {
     display: flex;
     justify-content: center;
-    
+    text-decoration: none;
+  }
 
+  .textobbb {
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .btn-voltar1 {
+    border-radius: 30px;
+    width: 100px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 500vh;
+  }
+
+  .cards {
+    display: flex;
+    padding: 55px 0px 30px;
+  }
+  .textobbb {
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .row {
+    padding-top: 20px;
+  }
+
+  .contador {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 25px;
+    display: block;
+  }
+
+  .btn-voltar1 {
+    border-radius: 30px;
+    width: 130px;
+    text-decoration: none;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
   }
 }

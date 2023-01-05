@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/gobold');
 
 :root {
   --darkreader-neutral-background: #131516;
@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Gobold Uplow', sans-serif;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
+  font-family: 'Gobold Uplow', sans-serif;
 }
 
 
@@ -555,6 +556,20 @@ body::-webkit-scrollbar-button {
 
   }
 
+  .textobbb{
+
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .btn-voltar1{
+
+    border-radius: 30px;
+    width: 100px;
+  }
+
 }
 
 @media  screen and (min-width: 1920px){
@@ -564,6 +579,36 @@ body::-webkit-scrollbar-button {
     display: none;
 
   }
+
+  .row{
+
+    padding-top: 5em;
+
+  }
+
+  #divButton{
+
+    justify-content: center;
+    padding-top: 5em;
+
+  }
+
+  .btn-voltar2{
+
+    border-radius: 30px;
+    width: 130px;
+  }
+
+
+  .textobbb{
+
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 5em;
+  }
+
+
 
 }
 

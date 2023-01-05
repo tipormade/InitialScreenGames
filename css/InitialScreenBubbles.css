@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/gobold');
 
 
 
@@ -11,7 +10,7 @@
 body {
   overflow: hidden;
   background-color: rgb(40, 40, 40);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gobold Uplow', sans-serif;
   font-size: 35px;
   background: rgb(39, 5, 96);
   background: radial-gradient(
@@ -434,6 +433,7 @@ svg {
   }
 }
 
+
 .bi-joystick {
   padding-left: 15px;
 }
@@ -473,8 +473,8 @@ li {
   
   .roboBBB{
 
-    width: 48vh;
-    top: 20px;
+    width: 47vh;
+    top: 10px;
 
   }
 
@@ -492,9 +492,22 @@ li {
 
   .SelectJogos .row .col{
 
-    padding: 15vh;
+    padding: 12vh;
 
   }
+
+  .textobbb{
+
+    font: 20px;
+    color: #fff;
+    text-align: center;
+   
+  }
+
+  .fundo {
+    margin-top: 0vh;
+  }
+  
 
 
 }
@@ -526,8 +539,16 @@ li {
   .cta {
     width: 45vh;
     height: 20vh;
-    font-size: 25px;
+    font-size: 30px;
   
+  }
+
+  .textobbb{
+
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
   }
 
 }
