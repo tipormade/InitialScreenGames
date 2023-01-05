@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 const timer = document.querySelector('.timer');
-const timerInitial = 20000;
+const timerInitial = 60;
 
 timer.innerText = timerInitial;
 

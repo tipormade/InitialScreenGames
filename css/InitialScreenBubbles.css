@@ -496,6 +496,10 @@ li {
 
   }
 
+  .fundo {
+    margin-top: 0vh;
+  }
+
   .textobbb{
 
     font: 20px;

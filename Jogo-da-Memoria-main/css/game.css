@@ -137,17 +137,14 @@ body::-webkit-scrollbar-button {
 }
 
 @media all and (max-width: 1334px) {
-  .contador {
-    padding-bottom: 50px !important;
-  }
-
+  
   .col {
     display: flex;
     justify-content: center;
   }
   .cards {
     display: flex;
-    padding: 0px 50px 23px;
+    padding: 50px 50px 23px;
   }
 
   .grid {
@@ -205,6 +202,12 @@ body::-webkit-scrollbar-button {
     max-width: 500vh;
   }
 
+  .logoPormade{
+
+    margin-left: 9em;
+
+  }
+
   .cards {
     display: flex;
     padding: 55px 0px 30px;
@@ -213,7 +216,7 @@ body::-webkit-scrollbar-button {
     font: 10px;
     color: #fff;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .row {
