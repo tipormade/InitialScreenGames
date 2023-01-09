@@ -36,9 +36,9 @@ var counterMemory = 0;
 var counterTower = 0;
 
 window.onload = ()=>{
-    document.querySelector("#counterTicTac").addEventListener("click", counter);
-    document.querySelector("#counterMemory").addEventListener("click", counter2);
-    document.querySelector("#counterTower").addEventListener("click", counter3);
+    // document.querySelector("#counterTicTac").("click", counter);
+    // document.querySelector("#counterMemory").addEventListener("click", counter2);
+    // document.querySelector("#counterTower").addEventListener("click", counter3);
 
     counterTicTac = localStorage.getItem("counterTictac");
     counterMemory = localStorage.getItem("counterMemory");

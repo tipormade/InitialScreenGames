@@ -1,11 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/gobold');
+@import url('/assets/bbb23/fonts/gobold.css');
 
 
-
-@font-face {
-  font-family: "Golca";
-  src: url(pepper-type-golca/Pepper\ Type\ -\ Golca-ExtraLight.otf);
-}
 
 body {
   overflow: hidden;
@@ -77,15 +72,6 @@ h1 {
   font-size: 80px;
   color: rgb(255, 255, 255);
   padding: 0%;
-}
-
-h2 {
-  z-index: 1001 !important;
-  text-align: end;
-  padding: 0%;
-  margin: 0%;
-  height: 155px;
-  transform: rotate(-15deg);
 }
 
 /* .bi-controller {
