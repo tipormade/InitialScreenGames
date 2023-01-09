@@ -7,6 +7,7 @@ var xScore = 0;
 var oScore = 0;
 var winner = false;
 const maxVictory = 2;
+var VerificarResultado = 0;
 
 buttons.forEach(item => {
   item.innerHTML = '';
@@ -34,15 +35,15 @@ function checkWinnerFinal() {
     xScore++;
     xScoreText.innerHTML = xScore;
     if (xScore >= maxVictory) {
-      Swal.fire({
-        title: 'Parabéns!',
-        text: 'Você ganhou!', 
-        icon: 'success',
-        confirmButtonColor: '#509d45',
-        confirmButtonText: 'Ok',
-      }).then((result) => {
-        window.location.replace('../');
-      });
+      // Swal.fire({
+      //   title: 'Parabéns!',
+      //   text: 'Você ganhou!', 
+      //   icon: 'success',
+      //   confirmButtonColor: '#509d45',
+      //   confirmButtonText: 'Ok',
+      // }).then((result) => {
+      //   window.location.replace('../');
+      // });
     }
   } else if (winner == ai) {
     oScore++;
