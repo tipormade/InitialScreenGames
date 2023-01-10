@@ -1,17 +1,21 @@
+
 document.getElementById('counterTicTac').addEventListener('click', function (e) {
     e.preventDefault();
     Swal.fire({
-    
-      title: 'Selecione o modo de Jogo!',
-      width: 700,
-      padding: '5em',
-      color: '#716add',
-      background: '#fff ',
-      backdrop: `
-        rgba(0,0,123,0.4)
-        url("/images/nyan-cat.gif")
-        left top
-        no-repeat
-      `
-    })
+      title: 'Qual modo de jogo deseja jogar?',
+      text: 'Selecione o modo de jogo do jogo da velha!',
+      icon: 'question',
+      showCancelButton: true,
+      popup: 'animate__backOutDown',
+      confirmButtonColor: '#509d45',
+      cancelButtonColor: '#024053',
+      confirmButtonText: '1 pessoa',
+      cancelButtonText: '2 pessoas',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.replace('Jogo-Da-Velha-Main/index.html');
+      } else {
+        window.location.replace('TwoPlayers/index.html');
+      }
+    });
 });

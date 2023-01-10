@@ -1,0 +1,614 @@
+@import url('https://fonts.cdnfonts.com/css/gobold');
+
+:root {
+  --darkreader-neutral-background: #131516;
+  --darkreader-neutral-text: #d8d4cf;
+  --darkreader-selection-background: #004daa;
+  --darkreader-selection-text: #e8e6e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gobold Uplow', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #270560;
+  background: radial-gradient(
+    circle,
+    rgba(39, 5, 96, 1) 0%,
+    rgba(56, 0, 183, 1) 100%
+  );
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  font-family: 'Gobold Uplow', sans-serif;
+}
+
+
+.logoBBB {
+  width: 25%;
+}
+.logoPormade {
+  width: 25%;
+  
+}
+
+.btn-voltar1 {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fc7c0b;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+ 
+}
+
+.btn-voltar2 {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fc7c0b;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  
+ 
+}
+
+.divLogo{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+
+.divResultadoX{
+
+  position: relative;
+  align-self: flex-start;  
+
+}
+
+.row-game {
+  flex-wrap: wrap;
+}
+
+ .game {
+  order: 1;
+ }
+
+#title h2 {
+  color: black;
+  text-align: center;
+  font-size: 60pt;
+}
+
+#title p {
+  color: #509d45;
+  text-align: center;
+  font-size: 90pt;
+  margin-bottom: 50px;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+}
+
+.countainer {
+  margin: auto;
+}
+.game {
+  padding-top: 5em;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.game button {
+  color: #fc7c0b;
+  border: none;
+  font-size: 100pt;
+  font-weight: bold;
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.game button:hover {
+  background-color: #ffffff75;
+}
+
+#winner {
+  background-color: #ffffffb7;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: xxx-large;
+  width: 600px;
+  padding: 150px 0 150px 0;
+  border-radius: 20px;
+  margin-top: -630px;
+  z-index: 10;
+}
+
+#winner p {
+  font-size: 100pt;
+}
+
+.score {
+  text-align: center;
+  order: 1;
+  align-self: center;
+
+}
+
+.score h2 {
+  color: #fc7c0b;
+  text-align: center;
+  font-size: 60pt;
+  font-weight: bold;
+}
+
+.score p {
+  color: white;
+  font-weight: bold;
+  font-size: 60pt;
+}
+
+#background {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: -600px;
+  z-index: -2;
+  filter: invert();
+}
+
+#divButton {
+  display: flex;
+}
+
+#winLine {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  z-index: -2;
+}
+
+.condition0 {
+  top: -505px;
+}
+
+.condition1 {
+  top: -300px;
+}
+
+.condition2 {
+  top: -105px;
+}
+
+.condition3 {
+  top: -305px;
+  left: -200px;
+  transform: rotate(90deg);
+}
+
+.condition4 {
+  top: -305px;
+  left: 0px;
+  transform: rotate(90deg);
+}
+
+.condition5 {
+  top: -305px;
+  left: 200px;
+  transform: rotate(90deg);
+}
+
+.condition6 {
+  top: -305px;
+  transform: rotate(45deg);
+}
+
+.condition7 {
+  top: -305px;
+  transform: rotate(-45deg);
+}
+
+#play {
+  color: white;
+  background-color: #509d45;
+  font-size: 55pt;
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  cursor: pointer;
+}
+
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.invisible {
+  display: none;
+}
+
+/*-----------------------------------------------------*/
+
+.row {
+  padding: 0%;
+  align-items: start;
+  justify-content: center;
+}
+
+.row-result-title {
+  margin: 15px;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  padding-right: 1.3em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  z-index: 1001 !important;
+  font-weight: 900;
+  color: white;
+}
+
+.bi-controller {
+  color: white;
+  font-size: 75px;
+  vertical-align: -2.9em;
+  padding-left: 355px;
+  animation: flickflick 3s infinite;
+}
+@keyframes flickflick {
+  0% {
+    text-shadow: 0 0 0em white;
+  }
+  25% {
+    text-shadow: 0 0 1em white;
+  }
+  50% {
+    text-shadow: 0 0 0.08em white;
+  }
+  100% {
+    text-shadow: 0 0 0em white;
+  }
+}
+.subtitle {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+h3 {
+  padding-top: 5px;
+  margin: 0%;
+  text-align: center;
+  font-family: "Golca", sans-serif;
+  z-index: 1001 !important;
+  font-weight: bolder;
+  font-size: 3em;
+  letter-spacing: 7px;
+  line-height: 0%;
+}
+
+.el1 {
+  color: #7df76d;
+  text-shadow: 0 0 1em #509d45;
+  animation: glitch1 2.5s infinite;
+}
+.el2 {
+  padding-top: 0%;
+  color: #3bf75b;
+  text-shadow: 0 0 1em #509d45;
+  animation: glitch2 2.5s infinite;
+}
+.el3 {
+  color: #509d45;
+  text-shadow: 0 0 1em #509d45;
+  animation: glitch3 2.5s infinite;
+}
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(-8deg, 0.4deg);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-5deg, 2deg);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-2deg, 10deg);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-10deg, 7deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(0.7deg, -5deg);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-10deg, -2.7deg);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-3deg, 2deg);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-1.3deg, 2deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(1deg, 4deg);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+.fundo {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+@media all and (min-width: 1080px) {
+  .row-title {
+    padding-top: 1em !important;
+  }
+
+  .game {
+    padding-top: 0em !important;
+  }
+
+ 
+
+  .btn-voltar {
+    margin-top: 5em;
+    font-size: 25px;
+    width: 12em;
+    height: 4em;
+    border-radius: 10px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .score {
+    order: 1;
+    flex: 50%;
+   }
+   .game {
+    order: 0;
+    flex: 100%;
+    margin-bottom: 50px;
+   }
+
+ 
+}
+
+
+@media screen and (max-width:1334px){
+
+  .btn-voltar2{
+
+    display: none;
+
+  }
+
+  .textobbb{
+
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .btn-voltar1{
+
+    border-radius: 30px;
+    width: 100px;
+  }
+
+}
+
+@media  screen and (min-width: 1920px){
+
+  .btn-voltar1{
+
+    display: none;
+
+  }
+
+  .row{
+
+    padding-top: 5em;
+
+  }
+
+  #divButton{
+
+    justify-content: center;
+    padding-top: 5em;
+
+  }
+
+  .btn-voltar2{
+
+    border-radius: 30px;
+    width: 130px;
+  }
+
+
+  .textobbb{
+
+    font: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 5em;
+  }
+
+
+
+}
+

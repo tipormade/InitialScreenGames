@@ -1,0 +1,50 @@
+.resultado {
+    width: 100vw;
+    height: 100vh;
+    z-index:  1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado video {
+    width: 100%;
+    height: 100%;
+}
+
+.resultado div {
+    z-index: 2000;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    bottom: 25px;
+    
+}
+.resultado div a {
+
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    width: 170px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 5px;
+    color: #fff;
+    background-color: #000;
+
+}
+
+
+#Text-Resultado{
+
+    color: #fff;
+    position: absolute;
+    top: 50px;    
+}
+

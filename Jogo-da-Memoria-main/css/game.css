@@ -16,6 +16,20 @@ body {
   font-family: "Gobold Uplow", sans-serif;
 }
 
+.swal2-popup{
+
+  border: 3px solid  #fc4f07 !important;
+  background: rgb(39, 5, 96) !important;
+  background: radial-gradient(
+    circle,
+    rgba(39, 5, 96, 1) 0%,
+    rgba(56, 0, 183, 1) 100%
+  );
+    color: #fff !important;
+    border-radius: 20px !important;
+    font-family: 'Gobold Uplow', sans-serif !important;
+}
+
 .row {
   padding: 0%;
 }
@@ -155,12 +169,7 @@ body::-webkit-scrollbar-button {
     max-width: 500vh;
   }
 
-  .swal2-popup {
-    background-color: #000 !important;
-    color: white !important;
-    border: 5px solid #509e45 !important;
-    border-radius: 30px !important;
-  }
+
 
   .row-title {
     padding: 15px;

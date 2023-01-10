@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Jogo da Velha</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="ia-minimax/style.css" />
+    <link rel="stylesheet" href="jogo-velha.css" />
+  </head>
+  <body oncontextmenu="return false">
+    <main>
+      <div class="container text-center">
+        <div class="row row-title">
+          <div class="divLogo">
+            <img
+              class="logoPormade"
+              src="./images/logo-pormade-branco.png"
+              alt=""
+            />
+            <a href="../index.html"><button class="btn-voltar1">VOLTAR</button></a>
+            <img
+              class="logoBBB"
+              src="./images/pormade-portas-bbb-logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row row-game">
+          <div class="col score">                  
+            <h2>X</h2>
+            <p id="xScore">0</p>
+        </div>
+          <div class="col game">
+              <button data-i="0,0" id="button00"></button>
+              <button data-i="0,1" id="button01"></button>
+              <button data-i="0,2" id="button02"></button>
+              <button data-i="1,0" id="button10"></button>
+              <button data-i="1,1" id="button11"></button>
+              <button data-i="1,2" id="button12"></button>
+              <button data-i="2,0" id="button20"></button>
+              <button data-i="2,1" id="button21"></button>
+              <button data-i="2,2" id="button22"></button>
+              <div>
+                <img id="background" src="images/quadro.png" width="600px" />
+                <img
+                  id="winLine"
+                  class="hidden"
+                  src="images/Line (3).png"
+                  width="600px"
+                />
+              </div>
+          </div>
+          <div class="col score">
+            <h2>O</h2>
+            <p id="oScore">0</p>
+
+        </div>
+          </div>
+          <div class="alinhasscore">
+            <div id="divButton">
+              <button class="invisible" id="play" onclick="playGame()">
+                Play
+              </button>
+              <a href="../index.html"><button class="btn-voltar2">VOLTAR</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="textobbb">©2023 TM Endemol Shine Group B.V</h6>
+      <div class="fundo"></div>
+    </main>
+    <div class="resultado" id="resultado">
+      <h3 id="Text-Resultado">Você é o novo LIDER da pormade</h3>
+      <div><a href="../index.html" class="btn-voltar1">VOLTAR</a></div>
+      <video id="video">
+      </video>
+    </div>
+  <script src="ia-minimax/script.js"></script>
+  <script src="resultado.js"></script>
+  <script src="ia-minimax/minimax.js"></script>
+    <script src="../Jogo-da-Memoria-main/sweetalert2/sweetalert.js"></script>
+  </body>
+</html>
