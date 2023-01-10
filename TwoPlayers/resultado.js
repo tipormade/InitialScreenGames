@@ -1,7 +1,7 @@
 var videoResultado = document.getElementById("video");
 var resultado = document.getElementById("resultado");
 setTimeout(() => {
-    anjo();
+    lider();
 }, 10000);
 
 

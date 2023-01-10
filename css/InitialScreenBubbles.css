@@ -55,6 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a3d2",endCo
   width: 50vw;
   top: 0em;
   left: 4vw;
+  top: 10px;
 }
 
 img {
@@ -552,7 +553,7 @@ li {
     font: 10px;
     color: #fff;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
 }
